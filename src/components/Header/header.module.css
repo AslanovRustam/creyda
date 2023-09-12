@@ -1,0 +1,53 @@
+.header {
+  padding: 3.125em;
+  display: flex;
+  align-items: center;
+}
+.logo {
+  font-size: 2.25em;
+  font-weight: 800;
+  letter-spacing: 0.01em;
+}
+.menu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5em 1.111em;
+  margin-left: 2.67em;
+  border: 0.1em solid var(--dark);
+  border-radius: 2.61em;
+  font-family: RedHat Display;
+  font-size: 1.125em;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  cursor: pointer;
+}
+.menu:hover .dot,
+.menu:focus .dot {
+  animation-play-state: paused;
+}
+.dots {
+  display: flex;
+  margin-bottom: 0.4em;
+}
+.dot {
+  margin-right: 0.556em;
+  font-weight: 800;
+  animation: 0.5s dotsMove ease-in-out infinite alternate;
+}
+.dot:nth-child(2) {
+  animation-delay: 0.2s;
+}
+.dot:nth-child(3) {
+  animation-delay: 0.4s;
+}
+@keyframes dotsMove {
+  0% {
+    transform: translate(0, 0);
+  }
+
+  100% {
+    transform: translate(0, -0.1em);
+  }
+}

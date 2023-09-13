@@ -1,0 +1,45 @@
+.container {
+  padding-top: 3.375em;
+}
+.wrapper {
+  margin-bottom: 3.375em;
+}
+.list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.item {
+  position: relative;
+  padding: 3.75em 3.75em 10em 3.75em;
+  border-radius: 2.8125em;
+  border: 0.044em solid var(--dark);
+  background: var(--white);
+  backdrop-filter: blur(0.111em);
+  overflow: hidden;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+.title {
+  font-size: 3.375em;
+  line-height: 133.333%;
+}
+.image {
+  opacity: 0;
+  /* display: none; */
+  position: absolute;
+  width: 28.4375em;
+  right: -13em;
+  top: 4em;
+  transition: all 0.5s ease-in-out;
+  color: var(--main);
+}
+.item:hover .image,
+.item:focus .image {
+  opacity: 1;
+  /* display: block; */
+}
+.item:hover,
+.item:focus {
+  color: var(--main);
+  background: var(--dark);
+}

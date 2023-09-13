@@ -55,15 +55,15 @@ video {
     url(./fonts/velaSans/VelaSans-ExtraBold800.ttf) format("opentype");
 }
 @font-face {
-  font-family: "RedHat Display";
+  font-family: "RedHat";
   font-weight: 400;
-  src: local("RedHat Display"),
+  src: local("RedHat"),
     url(./fonts/redHatDisplay/RedHatDisplay-Regular400.ttf) format("opentype");
 }
 @font-face {
-  font-family: "RedHat Display";
+  font-family: "RedHat";
   font-weight: 500;
-  src: local("RedHat Display"),
+  src: local("RedHat"),
     url(./fonts/redHatDisplay/RedHatDisplay-Medium500.ttf) format("opentype");
 }
 /* @media (orientation: portrait) {

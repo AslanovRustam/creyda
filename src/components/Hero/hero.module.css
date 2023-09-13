@@ -1,0 +1,19 @@
+.container {
+  position: relative;
+  margin-top: 9.875em;
+  margin-bottom: 12.5625em;
+}
+.title {
+  margin-top: 0.3125em;
+
+  font-size: 8em;
+  font-weight: 600;
+  line-height: 109.375%;
+}
+.circle {
+  position: absolute;
+  top: -7em;
+  right: -23em;
+  width: 74.5625em;
+  z-index: -1;
+}

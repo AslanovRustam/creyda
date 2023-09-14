@@ -1,0 +1,100 @@
+.title {
+  margin-bottom: 0.82em;
+  font-size: 3.4375em;
+  line-height: 130.909%;
+}
+.wrapper {
+  padding: 1.625em;
+  border-radius: 2.8125em;
+  background: var(--main);
+}
+.list {
+  display: flex;
+  gap: 0.625em;
+  margin-bottom: 2.125em;
+}
+.image {
+  width: 32.5625em;
+}
+.block {
+  text-align: center;
+}
+.button {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  padding: 0.5em 1.11em;
+  border-radius: 2.61em;
+  background: var(--dark);
+  font-size: 1.125em;
+  cursor: pointer;
+}
+.arrow,
+.arrowNavBtnNext,
+.arrowNavBtnPrev {
+  width: 0.875em;
+  color: var(--main);
+  margin-right: 0.45em;
+  animation: 0.5s arrowRight ease-in-out infinite alternate;
+  animation-play-state: paused;
+}
+.arrowNavBtnNext,
+.arrowNavBtnPrev {
+  color: var(--grey);
+  margin-left: 0.45em;
+}
+.arrowNavBtnPrev {
+  rotate: 180deg;
+}
+.btnText {
+  color: var(--main);
+  font-family: RedHat;
+  line-height: 133.333%;
+  text-transform: uppercase;
+}
+.button:hover .arrow,
+.button:focus .arrow {
+  animation-play-state: running;
+}
+.swiperBtns {
+  display: flex;
+  margin: 3.4375em;
+}
+.btnNext,
+.btnPrev {
+  display: flex;
+  align-items: center;
+  padding: 0.5em 1.11em;
+  text-align: center;
+  font-family: RedHat;
+  font-size: 1.125em;
+  line-height: 133.333%;
+  text-transform: uppercase;
+  cursor: pointer;
+  border-radius: 2.61em;
+  border: 0.11em solid var(--grey);
+  color: var(--grey);
+  transition: all 0.3s ease-in-out;
+}
+.btnPrev {
+  margin-right: 0.56em;
+}
+.btnNext:hover .arrowNavBtnNext,
+.btnNext:focus .arrowNavBtnNext,
+.btnPrev:hover .arrowNavBtnPrev,
+.btnPrev:focus .arrowNavBtnPrev {
+  color: var(--dark);
+}
+.btnNext:hover,
+.btnNext:focus,
+.btnPrev:hover,
+.btnPrev:focus {
+  color: var(--dark);
+  background-color: var(--main);
+  border-color: var(--main);
+}
+@keyframes arrowRight {
+  100% {
+    transform: translateX(0.2em);
+  }
+}

@@ -1,0 +1,15 @@
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  margin: 3.4375em 0;
+}
+.list {
+  display: flex;
+}
+.item {
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+.casesWrapper {
+  margin-left: 15em;
+}

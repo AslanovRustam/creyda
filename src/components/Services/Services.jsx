@@ -1,7 +1,6 @@
 import InfoContainer from "../InfoContainer/InfoContainer";
 import s from "./services.module.css";
 import { services } from "../../data/data";
-import { ReactComponent as ThreeD } from "../../images/services/3d.svg";
 
 export default function Services() {
   return (
@@ -17,11 +16,6 @@ export default function Services() {
               dangerouslySetInnerHTML={{ __html: title }}
             ></p>
             {image}
-            {/* <Image className={`${s.image} ${s.show}`} /> */}
-            {/* <svg className={`${s.image} ${s.show}`}>
-              <use href={image}></use>
-            </svg> */}
-            {/* <img className={`${s.image} ${s.show}`} src={image} alt={id} /> */}
           </li>
         ))}
       </ul>

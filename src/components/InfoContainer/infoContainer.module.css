@@ -9,4 +9,10 @@
   line-height: 133.333%;
   color: var(--grey);
   text-transform: uppercase;
+  transition: all 0.3s ease-in-out;
+}
+.active {
+  background: var(--main);
+  color: var(--dark);
+  border-color: var(--main);
 }

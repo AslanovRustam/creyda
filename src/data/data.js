@@ -1,3 +1,4 @@
+import s from "../components/Services/services.module.css";
 import uiDes from "../images/services/design.svg";
 import graphic from "../images/services/graphic.svg";
 import logo from "../images/services/logo.svg";
@@ -12,7 +13,19 @@ import { ReactComponent as Motion } from "../images/services/motion.svg";
 import { ReactComponent as Ilustration } from "../images/services/illustration.svg";
 import { ReactComponent as ThreeD } from "../images/services/3d.svg";
 import { ReactComponent as Development } from "../images/services/development.svg";
-import s from "../components/Services/services.module.css";
+import fairspin from "../images/fairspin.png";
+import ae from "../images/technologies/AE.png";
+import figma from "../images/technologies/Figma.png";
+import css from "../images/technologies/css.png";
+import react from "../images/technologies/react.png";
+import js from "../images/technologies/js.png";
+import paint from "../images/technologies/paint.png";
+import blender from "../images/technologies/blender.png";
+import boat from "../images/technologies/boat.png";
+import ps from "../images/technologies/ps.png";
+import html from "../images/technologies/html.png";
+import ai from "../images/technologies/ai.png";
+import procreate from "../images/technologies/procreate.png";
 
 export const services = [
   {
@@ -68,4 +81,46 @@ export const cases = [
   { id: "illustration", name: "illustration" },
   { id: "3d", name: "3d" },
   { id: "development", name: "development" },
+];
+
+export const slidersData = [
+  {
+    id: 0,
+    title: "Fairspin landings design",
+    infoContainer: ["Branding", "Design"],
+    image: fairspin,
+  },
+  {
+    id: 1,
+    title: "Fairspin landings design2",
+    infoContainer: ["Branding", "Design"],
+    image: fairspin,
+  },
+  {
+    id: 2,
+    title: "Fairspin landings design3",
+    infoContainer: ["Branding", "Design"],
+    image: fairspin,
+  },
+  {
+    id: 3,
+    title: "Fairspin landings design4",
+    infoContainer: ["Branding", "Design"],
+    image: fairspin,
+  },
+];
+
+export const technologies = [
+  { name: "ae", image: ae },
+  { name: "figma", image: figma },
+  { name: "css", image: css },
+  { name: "react", image: react },
+  { name: "js", image: js },
+  { name: "paint", image: paint },
+  { name: "blender", image: blender },
+  { name: "boat", image: boat },
+  { name: "ps", image: ps },
+  { name: "html", image: html },
+  { name: "ai", image: ai },
+  { name: "procreate", image: procreate },
 ];

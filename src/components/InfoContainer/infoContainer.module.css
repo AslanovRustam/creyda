@@ -16,3 +16,7 @@
   color: var(--dark);
   border-color: var(--main);
 }
+.sliderInActiv {
+  color: var(--white);
+  border-color: var(--white);
+}

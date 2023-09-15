@@ -1,6 +1,7 @@
 import InfoContainer from "../InfoContainer/InfoContainer";
-import s from "./services.module.css";
+import Paralax from "../../helpers/Paralax";
 import { services } from "../../data/data";
+import s from "./services.module.css";
 
 export default function Services() {
   return (
@@ -15,7 +16,9 @@ export default function Services() {
               className={s.title}
               dangerouslySetInnerHTML={{ __html: title }}
             ></p>
-            {image}
+            <Paralax position="absolute" top="0em" right="-1em">
+              {image}
+            </Paralax>
           </li>
         ))}
       </ul>

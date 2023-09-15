@@ -1,116 +1,62 @@
+import { useState } from "react";
 import { Navigation, Pagination, Scrollbar, A11y } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "swiper/css/scrollbar";
-import s from "./sliderCase.module.css";
 import InfoContainer from "../InfoContainer/InfoContainer";
-import fairspin from "../../images/fairspin.png";
-import { ReactComponent as Arrow } from "../../images/arrow.svg";
 import NavBtn from "./NavBtn";
+import { ReactComponent as Arrow } from "../../images/arrow.svg";
+import s from "./sliderCase.module.css";
+import { slidersData } from "../../data/data";
 
 export default function SliderCase() {
+  const [swiperActiveIndex, setSwiperActiveIndex] = useState(0);
+
   return (
     <div>
       <Swiper
         modules={[Navigation, Scrollbar, A11y]}
-        spaceBetween={50}
+        spaceBetween={0}
         slidesPerView={1.5}
         // navigation
         // scrollbar={{ draggable: true }}
-        onSwiper={(swiper) => console.log(swiper)}
-        onSlideChange={() => console.log("slide change")}
+        // onSwiper={(swiper) => setSwiper(swiper)}
+        onSlideChange={(swiper) => setSwiperActiveIndex(swiper.activeIndex)}
       >
-        <SwiperSlide>
-          <div>
-            <p className={s.title}>Fairspin landings design</p>
-            <div className={s.wrapper}>
-              <ul className={s.list}>
-                <li className={s.item}>
-                  <InfoContainer text="Branding" />
-                </li>
-                <li className={s.item}>
-                  <InfoContainer text="Design" />
-                </li>
-              </ul>
-              <p className={s.block}>
-                <img className={s.image} src={fairspin} alt="logo" />
-              </p>
-              <button type="button" className={s.button}>
-                <Arrow className={s.arrow} />
-                <p className={s.btnText}>Watch project</p>
-              </button>
-            </div>
-          </div>
-        </SwiperSlide>
-        <SwiperSlide>
-          <div>
-            <p className={s.title}>Fairspin landings design</p>
-            <div>
-              <ul className={s.list}>
-                <li className={s.item}>
-                  <InfoContainer text="Branding" />
-                </li>
-                <li className={s.item}>
-                  <InfoContainer text="Design" />
-                </li>
-              </ul>
-              <p className={s.block}>
-                <img className={s.image} src={fairspin} alt="logo" />
-              </p>
-
-              <button type="button" className={s.button}>
-                <Arrow className={s.arrow} />
-                <p className={s.btnText}>Watch project</p>
-              </button>
-            </div>
-          </div>
-        </SwiperSlide>
-        <SwiperSlide>
-          <div>
-            <p className={s.title}>Fairspin landings design</p>
-            <div>
-              <ul className={s.list}>
-                <li className={s.item}>
-                  <InfoContainer text="Branding" />
-                </li>
-                <li className={s.item}>
-                  <InfoContainer text="Design" />
-                </li>
-              </ul>
-              <p className={s.block}>
-                <img className={s.image} src={fairspin} alt="logo" />
-              </p>
-              <button type="button" className={s.button}>
-                <Arrow className={s.arrow} />
-                <p className={s.btnText}>Watch project</p>
-              </button>
-            </div>
-          </div>
-        </SwiperSlide>
-        <SwiperSlide>
-          <div>
-            <p className={s.title}>Fairspin landings design</p>
-            <div>
-              <ul className={s.list}>
-                <li className={s.item}>
-                  <InfoContainer text="Branding" />
-                </li>
-                <li className={s.item}>
-                  <InfoContainer text="Design" />
-                </li>
-              </ul>
-              <p className={s.block}>
-                <img className={s.image} src={fairspin} alt="logo" />
-              </p>
-              <button type="button" className={s.button}>
-                <Arrow className={s.arrow} />
-                <p className={s.btnText}>Watch project</p>
-              </button>
-            </div>
-          </div>
-        </SwiperSlide>
+        {slidersData.map(({ id, title, infoContainer, image }, idx) => (
+          <SwiperSlide key={id}>
+            <>
+              <p className={s.title}>{title}</p>
+              <div
+                className={`${s.wrapper} ${
+                  swiperActiveIndex === idx && s.activeSlide
+                }`}
+              >
+                <ul className={s.list}>
+                  {infoContainer.map((item) => (
+                    <li className={s.item} key={item}>
+                      <InfoContainer
+                        text={item}
+                        sliderInActiv={
+                          swiperActiveIndex !== idx && s.activeSlide
+                        }
+                      />
+                    </li>
+                  ))}
+                </ul>
+                <p className={s.block}>
+                  <img className={s.image} src={image} alt={title} />
+                </p>
+                <button type="button" className={s.button}>
+                  <Arrow className={s.arrow} />
+                  <p className={s.btnText}>Watch project</p>
+                </button>
+              </div>
+            </>
+          </SwiperSlide>
+        ))}
         <NavBtn />
       </Swiper>
     </div>

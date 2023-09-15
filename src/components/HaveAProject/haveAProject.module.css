@@ -1,0 +1,74 @@
+.container {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  margin: 14.125em 0;
+  padding: 5.0625em 7.125em;
+  border-radius: 2.8125em;
+  background: var(--dark);
+}
+.stain {
+  position: absolute;
+  width: 55.25em;
+  left: -41em;
+  top: -17em;
+  z-index: -1;
+}
+.title,
+.titleGreen {
+  color: var(--white);
+  font-size: 4.5em;
+  font-weight: 600;
+  line-height: 133.333%;
+}
+.titleGreen {
+  color: var(--main);
+}
+.button {
+  position: relative;
+  padding: 0.5em 2em;
+  margin-top: 5em;
+  border-radius: 3.125em;
+  background: var(--main);
+  font-family: RedHat;
+  font-size: 2em;
+  font-weight: 600;
+  line-height: 125%;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  cursor: pointer;
+  z-index: 1;
+  transition: all 0.3s ease-in-out;
+}
+.button::after,
+.button::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 6.22em;
+  height: 1em;
+  padding: 0.5em 2em;
+  border-radius: 3.125em;
+  border: 0.1em solid var(--main);
+  z-index: -1;
+  transition: all 0.3s ease-in-out;
+}
+.button::after {
+  top: 0;
+  left: 0;
+}
+.button:hover::after,
+.button:focus::after {
+  top: 0.9em;
+}
+.button:hover::before,
+.button:focus::before {
+  top: 0.5em;
+}
+.imgContainer {
+  width: 37.9375em;
+  height: 25.1875em;
+  border-radius: 2.8125em;
+  border: 0.125em solid var(--main);
+}

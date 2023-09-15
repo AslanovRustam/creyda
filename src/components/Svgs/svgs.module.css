@@ -5,6 +5,42 @@
   /* width: 200em; */
   animation: 0.5s dotsMove ease-in-out infinite alternate;
 }
+.dots {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 3.6875em;
+  transition: all 0.3s ease-in-out;
+}
+.dots:hover .dotsTechLevitate,
+.dots:focus .dotsTechLevitate {
+  animation-play-state: running;
+}
+.dotsTechLevitate {
+  animation: 0.5s dotsLevitate ease-in-out infinite;
+  animation-play-state: paused;
+}
+.dotsTechLevitate:nth-child(2n + 1) {
+  animation-delay: 0.3s;
+}
+.dotsTechLevitate:nth-child(3n + 1) {
+  animation-delay: 0.4s;
+}
+.dotsTechLevitate:nth-child(4n + 1) {
+  animation-delay: 0.5s;
+}
+.dotsTechLevitate:nth-child(5n + 1) {
+  animation-delay: 0.75s;
+}
+.dotsTechLevitate:nth-child(6n + 1) {
+  animation-delay: 0.2s;
+}
+.dotsTechLevitate:nth-child(7n + 1) {
+  animation-delay: 0.1s;
+}
+.dotsTechLevitate:nth-child(8n + 1) {
+  animation-delay: 0.6s;
+}
 @keyframes dotsMove {
   0% {
     transform: translate(0, 0);
@@ -12,5 +48,16 @@
 
   100% {
     transform: translate(0, -0.1em);
+  }
+}
+@keyframes dotsLevitate {
+  0% {
+    opacity: 0;
+    transform: translate(0, 0);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate(0, -0.5em);
   }
 }

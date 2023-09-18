@@ -26,6 +26,11 @@ import ps from "../images/technologies/ps.png";
 import html from "../images/technologies/html.png";
 import ai from "../images/technologies/ai.png";
 import procreate from "../images/technologies/procreate.png";
+import behance from "../images/socials/behance.png";
+import group from "../images/socials/Group.png";
+import upwork from "../images/socials/upwork.png";
+import linkedin from "../images/socials/linkedin.png";
+import instagram from "../images/socials/Instagram.png";
 
 export const services = [
   {
@@ -93,19 +98,19 @@ export const slidersData = [
   {
     id: 1,
     title: "Fairspin landings design2",
-    infoContainer: ["Branding", "Design"],
+    infoContainer: ["Development", "Design"],
     image: fairspin,
   },
   {
     id: 2,
     title: "Fairspin landings design3",
-    infoContainer: ["Branding", "Design"],
+    infoContainer: ["Motion", "Design"],
     image: fairspin,
   },
   {
     id: 3,
     title: "Fairspin landings design4",
-    infoContainer: ["Branding", "Design"],
+    infoContainer: ["Logo", "Design"],
     image: fairspin,
   },
 ];
@@ -123,4 +128,33 @@ export const technologies = [
   { name: "html", image: html },
   { name: "ai", image: ai },
   { name: "procreate", image: procreate },
+];
+
+export const blog = [
+  {
+    id: 0,
+    title: "Title name  - website release and cases introduction",
+    image: "",
+    infoContainer: ["04.08.2023"],
+  },
+  {
+    id: 1,
+    title: "Title name  - website release and cases introduction",
+    image: "",
+    infoContainer: ["27.07.2023"],
+  },
+  {
+    id: 2,
+    title: "Title name  - website release and cases introduction",
+    image: "",
+    infoContainer: ["09.07.2023"],
+  },
+];
+
+export const socials = [
+  { id: 0, name: "behance", image: behance },
+  { id: 1, name: "group", image: group },
+  { id: 2, name: "upwork", image: upwork },
+  { id: 3, name: "linkedin", image: linkedin },
+  { id: 4, name: "instagram", image: instagram },
 ];

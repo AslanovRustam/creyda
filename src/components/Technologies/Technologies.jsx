@@ -1146,7 +1146,7 @@ const dots = (
 
 export default function Technologies() {
   return (
-    <section className={s.container}>
+    <section className={s.container} id="technologies">
       <InfoContainer text="Technologies we use" />
       <ul className={s.list}>
         {technologies.map(({ name, image }) => (

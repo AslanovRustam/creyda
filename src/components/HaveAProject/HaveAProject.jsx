@@ -1,9 +1,10 @@
 import s from "./haveAProject.module.css";
 import { ReactComponent as Stain } from "../../images/stain.svg";
+import PixelsCursor from "../PixelCursor/PixelCursor";
 
 export default function HaveAProject() {
   return (
-    <section className={s.container}>
+    <section className={s.container} id="write">
       <Stain className={s.stain} />
       <div className={s.titleContainer}>
         <p className={s.title}>Have a project?</p>
@@ -12,7 +13,9 @@ export default function HaveAProject() {
           Write to US
         </button>
       </div>
-      <div className={s.imgContainer}></div>
+      <div className={s.imgContainer}>
+        <PixelsCursor />
+      </div>
     </section>
   );
 }

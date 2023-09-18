@@ -1,15 +1,16 @@
 import InfoContainer from "../InfoContainer/InfoContainer";
-import s from "./cases.module.css";
 import { cases } from "../../data/data";
 import { useState } from "react";
-import SliderCase from "../Slider/SliderCase";
+import Slider from "../Slider/Slider";
 import Container from "../Container/Container";
+import { slidersData } from "../../data/data";
+import s from "./cases.module.css";
 
 export default function Cases() {
   const [active, setActive] = useState("all");
 
   return (
-    <section className={s.container}>
+    <section className={s.container} id="cases">
       <Container>
         <div className={s.navigation}>
           <InfoContainer text="Best cases" />
@@ -30,7 +31,7 @@ export default function Cases() {
         </div>
       </Container>
       <div className={s.casesWrapper}>
-        <SliderCase />
+        <Slider data={slidersData} btnProject navBtn slidesPerView="1.5" />
       </div>
     </section>
   );

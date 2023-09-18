@@ -6,7 +6,7 @@ import s from "./services.module.css";
 export default function Services() {
   return (
     <section className={s.container}>
-      <div className={s.wrapper}>
+      <div className={s.wrapper} id="offer">
         <InfoContainer text="What can we offer ?" fontWeight="500" />
       </div>
       <ul className={s.list}>

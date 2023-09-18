@@ -1,5 +1,8 @@
+import Blog from "./components/Blog/Blog";
 import Cases from "./components/Cases/Cases";
+import Contacts from "./components/Contacts/Contacts";
 import Container from "./components/Container/Container";
+import Footer from "./components/Footer/Footer";
 import HaveAProject from "./components/HaveAProject/HaveAProject";
 import Header from "./components/Header/Header";
 import Hero from "./components/Hero/Hero";
@@ -18,7 +21,10 @@ function App() {
       <Container>
         <Technologies />
         <HaveAProject />
+        <Contacts />
       </Container>
+      {/* <Blog /> */}
+      <Footer />
     </>
   );
 }

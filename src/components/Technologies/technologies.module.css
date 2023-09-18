@@ -64,6 +64,7 @@
 .item:hover,
 .item:focus {
   background-color: var(--main);
+  border-color: var(--main);
 }
 .dots {
   position: absolute;

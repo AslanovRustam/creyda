@@ -2,6 +2,7 @@
   padding: 3.125em 0;
   display: flex;
   align-items: center;
+  justify-content: space-between;
 }
 .logo {
   font-size: 2.25em;
@@ -41,6 +42,49 @@
 }
 .dot:nth-child(3) {
   animation-delay: 0.4s;
+}
+.list {
+  display: flex;
+  align-items: center;
+}
+.item {
+  margin-right: 3em;
+  text-align: center;
+  font-family: RedHat;
+  font-size: 1.125em;
+  line-height: 133.333%;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+.item::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 0.1em;
+  background-color: var(--grey);
+  transition: all 0.3s ease-in-out;
+}
+.item:hover,
+.item:focus {
+  color: var(--grey);
+}
+.item:hover::after,
+.item:focus::after {
+  width: 100%;
+}
+.item a {
+  color: inherit;
+}
+.lang {
+  padding: 0.5em;
+  border: 0.11em solid var(--dark);
+  border-radius: 50%;
+  text-align: center;
+  font-family: RedHat;
+  font-size: 1.125em;
+  line-height: 133.333%;
+  text-transform: uppercase;
 }
 @keyframes dotsMove {
   0% {

@@ -1,0 +1,7 @@
+.titles {
+  display: flex;
+  justify-content: space-between;
+}
+.casesWrapper {
+  margin-left: 15em;
+}

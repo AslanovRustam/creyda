@@ -20,8 +20,8 @@ export default function Paralax({
   }, []);
 
   const parallaxStyle = {
-    transform: `translate(-${paralaxPosition.x / 500}em, -${
-      paralaxPosition.y / 500
+    transform: `translate(-${paralaxPosition.x / 300}em, -${
+      paralaxPosition.y / 300
     }em)`,
     position: position,
     top: top,

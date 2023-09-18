@@ -29,6 +29,7 @@
   padding: 0.5em 2em;
   margin-top: 5em;
   border-radius: 3.125em;
+  border: none;
   background: var(--main);
   font-family: RedHat;
   font-size: 2em;
@@ -44,10 +45,10 @@
 .button::before {
   content: "";
   position: absolute;
-  top: 0;
+  top: 0.2em;
   left: 0;
-  width: 6.22em;
-  height: 1em;
+  width: 10.42em;
+  height: 2em;
   padding: 0.5em 2em;
   border-radius: 3.125em;
   border: 0.1em solid var(--main);
@@ -55,12 +56,12 @@
   transition: all 0.3s ease-in-out;
 }
 .button::after {
-  top: 0;
+  top: 0.1em;
   left: 0;
 }
 .button:hover::after,
 .button:focus::after {
-  top: 0.9em;
+  top: 0.8em;
 }
 .button:hover::before,
 .button:focus::before {

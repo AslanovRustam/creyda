@@ -11,7 +11,7 @@ const pixelLine = (
     fill="none"
     xmlns="http://www.w3.org/2000/svg"
   >
-    <g clip-path="url(#clip0_141_79)">
+    <g clipPath="url(#clip0_141_79)">
       <path
         className={s.dotsTechLevitate}
         d="M162.326 7.07617L169.674 7.07617V-0.2656L162.326 -0.2656V7.07617Z"
@@ -253,7 +253,7 @@ const pixelLine = (
         fill="current"
       />
     </g>
-    <g clip-path="url(#clip1_141_79)">
+    <g clipPath="url(#clip1_141_79)">
       <path
         className={s.dotsTechLevitate}
         d="M642.326 7.07617L649.674 7.07617V-0.2656L642.326 -0.2656V7.07617Z"
@@ -490,7 +490,7 @@ const pixelLine = (
         fill="current"
       />
     </g>
-    <g clip-path="url(#clip2_141_79)">
+    <g clipPath="url(#clip2_141_79)">
       <path
         className={s.dotsTechLevitate}
         d="M1122.33 7.07617L1129.67 7.07617V-0.2656L1122.33 -0.2656V7.07617Z"

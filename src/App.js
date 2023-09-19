@@ -1,6 +1,7 @@
 import Blog from "./components/Blog/Blog";
 import Cases from "./components/Cases/Cases";
 import Contacts from "./components/Contacts/Contacts";
+import ContactsFormik from "./components/Contacts/ContactsFormik";
 import Container from "./components/Container/Container";
 import Footer from "./components/Footer/Footer";
 import HaveAProject from "./components/HaveAProject/HaveAProject";
@@ -21,7 +22,8 @@ function App() {
       <Container>
         <Technologies />
         <HaveAProject />
-        <Contacts />
+        {/* <Contacts /> */}
+        <ContactsFormik />
       </Container>
       {/* <Blog /> */}
       <Footer />

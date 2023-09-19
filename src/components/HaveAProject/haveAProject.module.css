@@ -23,6 +23,7 @@
 }
 .titleGreen {
   color: var(--main);
+  margin-bottom: 2em;
 }
 .button {
   position: relative;

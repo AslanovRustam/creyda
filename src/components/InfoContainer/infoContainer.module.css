@@ -1,6 +1,7 @@
 .container {
   width: fit-content;
   /* display: inline-block; */
+  text-wrap: nowrap;
   padding: 0.5em 1.111em;
   border-radius: 2.333em;
   border: 0.11em solid var(--grey);
@@ -19,4 +20,10 @@
 .sliderInActiv {
   color: var(--white);
   border-color: var(--white);
+}
+@media (orientation: portrait) {
+  .container {
+    font-size: 1.7em;
+    padding: 0.75em 1.67em;
+  }
 }

@@ -23,39 +23,29 @@
 .buttonBorderSecond,
 .buttonBorderThird {
   position: absolute;
-  /* top: 0.2em; */
   left: 0;
-  /* width: 10.32em; */
   width: 100%;
-  height: 2em;
+  height: 100%;
   padding: 0.5em 2em;
   border-radius: 3.125em;
   border: 0.1em solid var(--main);
   z-index: -1;
   transition: all 0.3s ease-in-out;
 }
-/* .button:hover .buttonBorderFirst {
-  top: 0.5em;
-}
-.button:hover .buttonBorderSecond {
-  top: 0.8em;
-}
-.button:hover .buttonBorderThird {
-  top: 1.1em;
-} */
+
 .buttonBorderFirst {
-  top: 0.5em;
+  top: 0.3em;
 }
 .buttonBorderSecond {
-  top: 0.8em;
+  top: 0.6em;
 }
 .buttonBorderThird {
-  top: 1.1em;
+  top: 0.9em;
 }
 .button:hover .buttonBorderFirst,
 .button:hover .buttonBorderSecond,
 .button:hover .buttonBorderThird {
-  top: 0.2em;
+  top: 0em;
 }
 .colorBlack {
   background: var(--dark);
@@ -63,4 +53,11 @@
 }
 .colorBlackBorder {
   border-color: var(--dark);
+}
+@media (orientation: portrait) {
+  .button {
+    width: 100%;
+    font-size: 2.57em;
+    padding: 0.89em 2em;
+  }
 }

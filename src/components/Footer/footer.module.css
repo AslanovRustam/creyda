@@ -92,6 +92,7 @@ footer {
   border-radius: 50%;
   cursor: pointer;
 }
+
 .socialsItem:not(:last-child) {
   margin-right: 0.1875em;
 }

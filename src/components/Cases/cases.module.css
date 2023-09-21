@@ -13,3 +13,11 @@
 .casesWrapper {
   margin-left: 15em;
 }
+@media (orientation: portrait) {
+  .navigation {
+    flex-direction: column;
+  }
+  .list {
+    margin-top: 2.55em;
+  }
+}

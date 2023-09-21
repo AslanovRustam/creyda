@@ -6,7 +6,6 @@
 }
 .title {
   margin: 0.3125em 0 0.422em 0;
-
   font-size: 8em;
   font-weight: 600;
   line-height: 109.375%;
@@ -17,4 +16,18 @@
   right: -23em;
   width: 74.5625em;
   z-index: -1;
+}
+@media (orientation: portrait) {
+  .container {
+    margin: 3.41em 0 7.67em;
+  }
+  .title {
+    font-size: 5.113em;
+    margin: 0.89em 0 3.975em 0;
+  }
+  .circle {
+    top: -2em;
+    right: -25em;
+    width: 60.51em;
+  }
 }

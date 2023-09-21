@@ -1,17 +1,24 @@
 import s from "./header.module.css";
+import { ReactComponent as Dot } from "../../images/dot.svg";
 
 export default function Header() {
   return (
     <header className={s.header}>
       <h1 className={s.logo}>Kreyda</h1>
-      {/* <div className={s.menu}>
+      <div className={s.menu}>
         <div className={s.dots}>
-          <p className={s.dot}>.</p>
-          <p className={s.dot}>.</p>
-          <p className={s.dot}>.</p>
+          <p className={s.dot}>
+            <Dot className={s.dotMenu} />
+          </p>
+          <p className={s.dot}>
+            <Dot className={s.dotMenu} />
+          </p>
+          <p className={s.dot}>
+            <Dot className={s.dotMenu} />
+          </p>
         </div>
         <p className={s.text}>Menu</p>
-      </div> */}
+      </div>
       <ul className={s.list}>
         <li className={s.item}>
           <a href="#offer">What can we offer ?</a>

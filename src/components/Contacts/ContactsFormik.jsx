@@ -8,14 +8,20 @@ export default function ContactsFormik() {
     const errors = {};
     if (!values.name) {
       errors.name = "This field is required";
-    } else if (values.name.length < 3) {
-      errors.name = "Must be more than 2 characters";
+    } else if (
+      !/^[a-zA-Zа-яА-Я]+(([' \-][a-zA-Zа-яА-Я ])?[a-zA-Zа-яА-Я]*)*$/.test(
+        values.name
+      )
+    ) {
+      errors.name = "Enter the correct name";
     }
 
     if (!values.number) {
       errors.number = "This field is required";
-    } else if (values.number.length < 5) {
+    } else if (!/^(\+?[0-9.\(\)\-\s]*)$/.test(values.number)) {
       errors.number = "Invalid phone number";
+    } else if (values.number.length < 5) {
+      errors.number = "Too short phone number";
     }
 
     if (!values.email) {
@@ -36,12 +42,12 @@ export default function ContactsFormik() {
       message: "",
     },
     validate,
-    onSubmit: (values) => {
+    onSubmit: (values, { resetForm }) => {
       console.log(values);
+      resetForm();
     },
   });
 
-  console.log(formik.errors);
   return (
     <div className={s.container} id="write">
       <form className={s.form}>

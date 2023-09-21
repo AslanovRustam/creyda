@@ -3,3 +3,9 @@
 .container {
   margin: 0 15em;
 }
+
+@media (orientation: portrait) {
+  .container {
+    margin: 0 1.71em;
+  }
+}

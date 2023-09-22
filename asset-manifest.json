@@ -1,0 +1,30 @@
+{
+  "files": {
+    "main.css": "/creyda/static/css/main.82cec558.css",
+    "main.js": "/creyda/static/js/main.9df796e0.js",
+    "static/media/VelaSans-Medium500.ttf": "/creyda/static/media/VelaSans-Medium500.06a4e46f3b7dd34814f0.ttf",
+    "static/media/VelaSans-SemiBold600.ttf": "/creyda/static/media/VelaSans-SemiBold600.489b939c3be96db3682f.ttf",
+    "static/media/VelaSans-ExtraBold800.ttf": "/creyda/static/media/VelaSans-ExtraBold800.c594a80787ce45361cbe.ttf",
+    "static/media/graphic.svg": "/creyda/static/media/graphic.051bc1a8b092f6f77f4d96d41f3a80e8.svg",
+    "static/media/design.svg": "/creyda/static/media/design.abcea0fe230988e9aaca3eba7456bcaa.svg",
+    "static/media/circle.png": "/creyda/static/media/circle.0f279c6d38e11d555ce0.png",
+    "static/media/motion.svg": "/creyda/static/media/motion.15c5ad9eedd097acf8bbed08f69578a0.svg",
+    "static/media/stain.svg": "/creyda/static/media/stain.11e567f9c86f8d2968fe5262992fbf06.svg",
+    "static/media/development.svg": "/creyda/static/media/development.7ba35c6d36e9399c8986aef1a979b4c8.svg",
+    "static/media/3d.svg": "/creyda/static/media/3d.aa64fc5604b762182cbe3bf0bb38dd41.svg",
+    "static/media/RedHatDisplay-Medium500.ttf": "/creyda/static/media/RedHatDisplay-Medium500.3f3a8f4b5d0861029630.ttf",
+    "static/media/RedHatDisplay-Regular400.ttf": "/creyda/static/media/RedHatDisplay-Regular400.dfe5c1e7502e7ee7e3a2.ttf",
+    "static/media/fairspin.png": "/creyda/static/media/fairspin.dd196c3a21009da742bc.png",
+    "static/media/illustration.svg": "/creyda/static/media/illustration.b601606dff9227dc3e636645cff249b8.svg",
+    "static/media/logo.svg": "/creyda/static/media/logo.a3fc5df059b314ea42c591d6ffa39909.svg",
+    "index.html": "/creyda/index.html",
+    "static/media/arrow.svg": "/creyda/static/media/arrow.5dca4350678d7b834e213f70670a4319.svg",
+    "static/media/dot.svg": "/creyda/static/media/dot.bc9bf8764b65d7dbb728d0d4ef5f1db1.svg",
+    "main.82cec558.css.map": "/creyda/static/css/main.82cec558.css.map",
+    "main.9df796e0.js.map": "/creyda/static/js/main.9df796e0.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.82cec558.css",
+    "static/js/main.9df796e0.js"
+  ]
+}

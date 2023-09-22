@@ -2,12 +2,10 @@ import InfoContainer from "../InfoContainer/InfoContainer";
 import Paralax from "../../helpers/Paralax";
 import { services } from "../../data/data";
 import s from "./services.module.css";
-import { useEffect, useState } from "react";
+import useScreenOrientationPortrait from "../../helpers/orientation";
 
 export default function Services() {
-  const [orientationPortrait, setOrientationPortrait] = useState(
-    window.matchMedia("(orientation: portrait)").matches
-  );
+  const screenOrientation = useScreenOrientationPortrait();
 
   return (
     <section className={s.container}>
@@ -20,12 +18,12 @@ export default function Services() {
             <p
               className={s.title}
               dangerouslySetInnerHTML={{
-                __html: orientationPortrait ? titleMob : title,
+                __html: screenOrientation ? titleMob : title,
               }}
             ></p>
-            <Paralax position="absolute" top="0em" right="-1em">
-              {image}
-            </Paralax>
+            {/* <Paralax position="absolute" top="0em" right="-1em"> */}
+            {image}
+            {/* </Paralax> */}
           </li>
         ))}
       </ul>

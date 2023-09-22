@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 import s from "./pixelCursor.module.css";
 
 export default function PixelsCursor() {

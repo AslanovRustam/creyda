@@ -1,7 +1,7 @@
-import s from "./contacts.module.css";
 import { useFormik } from "formik";
 import { ReactComponent as Design } from "../../images/services/graphic.svg";
 import Button from "../Button/Button";
+import s from "./contacts.module.css";
 
 export default function ContactsFormik() {
   const validate = (values) => {
@@ -13,7 +13,7 @@ export default function ContactsFormik() {
         values.name
       )
     ) {
-      errors.name = "Enter the correct name";
+      errors.name = "Enter a valid name";
     }
 
     if (!values.number) {

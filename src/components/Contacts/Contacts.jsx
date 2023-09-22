@@ -50,7 +50,6 @@ export default function Contacts() {
   const handleBlur = (e) => {
     const { name, value } = e.target;
 
-    // Добавьте здесь дополнительные проверки и установите ошибку, если она есть
     if (
       name === "name" &&
       !/^[a-zA-Zа-яА-Я]+(([' \-][a-zA-Zа-яА-Я ])?[a-zA-Zа-яА-Я]*)*$/.test(value)

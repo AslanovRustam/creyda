@@ -14,9 +14,6 @@ export default function HaveAProject() {
       <div className={s.titleContainer}>
         <p className={s.title}>Have a project?</p>
         <p className={s.titleGreen}>Let’s talk!</p>
-        {/* <button type="button" className={s.button}>
-          Write to US
-        </button> */}
         <Button text="Write to US" type="button" onBtnClick={onBtnClick} />
       </div>
       <div className={s.imgContainer}>

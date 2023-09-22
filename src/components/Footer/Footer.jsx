@@ -253,7 +253,7 @@ const pixelLine = (
         fill="current"
       />
     </g>
-    <g clipPath="url(#clip1_141_79)">
+    {/* <g clipPath="url(#clip1_141_79)">
       <path
         className={s.dotsTechLevitate}
         d="M642.326 7.07617L649.674 7.07617V-0.2656L642.326 -0.2656V7.07617Z"
@@ -737,7 +737,7 @@ const pixelLine = (
       <clipPath id="clip2_141_79">
         <rect width="480" height="16" fill="white" transform="translate(960)" />
       </clipPath>
-    </defs>
+    </defs> */}
   </svg>
 );
 
@@ -780,14 +780,20 @@ export default function Footer() {
             <ul className={s.socialList}>
               {socials.map(({ id, name, image }) => (
                 <li className={s.socialsItem} key={id}>
-                  <img className={s.icon} src={image} alt={name} />
+                  <a href="#">
+                    <img className={s.icon} src={image} alt={name} />
+                  </a>
                 </li>
               ))}
             </ul>
           </div>
         </div>
         {/* <PixelLine className={s.pixelLine} /> */}
-        {pixelLine}
+        <ul className={s.pixelLine}>
+          <li className={s.first}> {pixelLine}</li>
+          <li className={s.second}> {pixelLine}</li>
+          <li className={s.third}> {pixelLine}</li>
+        </ul>
         <p className={s.creds}>© 2023 Kreyda</p>
       </Container>
     </footer>

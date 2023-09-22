@@ -14,7 +14,7 @@ export default function Slider({ data, btnProject, navBtn, slidesPerView }) {
   const [swiperActiveIndex, setSwiperActiveIndex] = useState(0);
 
   return (
-    <div>
+    <>
       <Swiper
         modules={[Navigation, Scrollbar, A11y]}
         spaceBetween={0}
@@ -60,6 +60,6 @@ export default function Slider({ data, btnProject, navBtn, slidesPerView }) {
         ))}
         {navBtn && <NavBtn />}
       </Swiper>
-    </div>
+    </>
   );
 }

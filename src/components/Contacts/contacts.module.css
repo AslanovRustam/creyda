@@ -72,3 +72,44 @@
   border: 0.125em solid var(--dark);
   overflow: hidden;
 }
+@media (orientation: portrait) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    gap: 8.0625em;
+  }
+  .form {
+    width: auto;
+  }
+  .title {
+    font-size: 3.41em;
+    font-weight: 500;
+  }
+  .label {
+    margin-top: 3.41em;
+  }
+  .label:first-of-type {
+    margin-top: 2.84em;
+  }
+  .label:last-of-type {
+    margin-bottom: 5.113em;
+  }
+  .input {
+    font-size: 2.56em;
+  }
+  .name {
+    font-size: 1.7em;
+  }
+  .errorMessage {
+    font-size: 1.7em;
+  }
+  .imageContainer {
+    width: 40.48em;
+    height: 40.48em;
+    border-radius: 6.39em;
+  }
+  .icon {
+    bottom: -2em;
+    left: 11em;
+  }
+}

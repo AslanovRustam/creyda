@@ -74,3 +74,29 @@
   border-radius: 2.8125em;
   border: 0.125em solid var(--main);
 }
+@media (orientation: portrait) {
+  .stain {
+    width: 37.78em;
+    left: -5em;
+    top: -9em;
+  }
+  .container {
+    flex-direction: column;
+    padding: 3.41em 2.27em 5.41em;
+    align-items: center;
+    margin-bottom: 11.08em;
+  }
+  .titleContainer {
+    order: 1;
+  }
+  .title,
+  .titleGreen {
+    font-size: 3.41em;
+  }
+  .title {
+    margin-top: 1.04em;
+  }
+  .titleGreen {
+    margin-bottom: 1.04em;
+  }
+}

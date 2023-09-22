@@ -4,7 +4,9 @@
   margin: 3.4375em 0;
 }
 .list {
-  display: flex;
+  /* display: flex; */
+  flex-shrink: 1;
+  width: 100%;
 }
 .item {
   cursor: pointer;
@@ -13,11 +15,17 @@
 .casesWrapper {
   margin-left: 15em;
 }
+.casesTitle {
+  margin-right: 11.5em;
+}
 @media (orientation: portrait) {
   .navigation {
     flex-direction: column;
   }
   .list {
     margin-top: 2.55em;
+  }
+  .casesWrapper {
+    margin-left: 1.71em;
   }
 }

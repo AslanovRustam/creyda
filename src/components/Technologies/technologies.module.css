@@ -160,6 +160,9 @@
   }
   .dots {
     height: auto;
-    width: 100%;
+    /* width: 100%; */
+  }
+  .smallItem {
+    height: 5.5em;
   }
 }

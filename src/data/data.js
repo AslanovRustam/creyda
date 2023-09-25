@@ -31,6 +31,11 @@ import group from "../images/socials/Group.png";
 import upwork from "../images/socials/upwork.png";
 import linkedin from "../images/socials/linkedin.png";
 import instagram from "../images/socials/Instagram.png";
+import { ReactComponent as Behance } from "../images/socials/behance.svg";
+import { ReactComponent as Group } from "../images/socials/Group.svg";
+import { ReactComponent as Upwork } from "../images/socials/upwork.svg";
+import { ReactComponent as Linkedin } from "../images/socials/linkedin.svg";
+import { ReactComponent as Instagram } from "../images/socials/Instagram.svg";
 
 export const services = [
   {
@@ -100,41 +105,45 @@ export const slidersData = [
     id: 0,
     title: "Fairspin landings design",
     infoContainer: ["Branding", "Design"],
+    name: ["all", "graphic design"],
     image: fairspin,
   },
   {
     id: 1,
     title: "Fairspin landings design2",
     infoContainer: ["Development", "Design"],
+    name: ["all", "development"],
     image: fairspin,
   },
   {
     id: 2,
     title: "Fairspin landings design3",
     infoContainer: ["Motion", "Design"],
+    name: ["all", "motion"],
     image: fairspin,
   },
   {
     id: 3,
     title: "Fairspin landings design4",
     infoContainer: ["Logo", "Design"],
+    name: ["all", "logo & identity"],
     image: fairspin,
   },
 ];
 
 export const technologies = [
-  { name: "ae", image: ae },
-  { name: "figma", image: figma },
-  { name: "css", image: css },
-  { name: "react", image: react },
-  { name: "js", image: js },
-  { name: "paint", image: paint },
-  { name: "blender", image: blender },
-  { name: "boat", image: boat },
-  { name: "ps", image: ps },
-  { name: "html", image: html },
-  { name: "ai", image: ai },
-  { name: "procreate", image: procreate },
+  { name: "ae", image: ae, width: false },
+  { name: "figma", image: figma, width: true },
+  { name: "css", image: css, width: false },
+  { name: "react", image: react, width: false },
+  { name: "js", image: js, width: true },
+  { name: "paint", image: paint, width: false },
+  { name: "blender", image: blender, width: true },
+  { name: "boat", image: boat, width: false },
+  { name: "ps", image: ps, width: false },
+  { name: "html", image: html, width: false },
+  { name: "ai", image: ai, width: false },
+  { name: "procreate", image: procreate, width: true },
 ];
 
 export const blog = [
@@ -159,9 +168,9 @@ export const blog = [
 ];
 
 export const socials = [
-  { id: 0, name: "behance", image: behance },
-  { id: 1, name: "group", image: group },
-  { id: 2, name: "upwork", image: upwork },
-  { id: 3, name: "linkedin", image: linkedin },
-  { id: 4, name: "instagram", image: instagram },
+  { id: 0, name: "behance", image: behance, imageSvg: <Behance /> },
+  { id: 1, name: "group", image: group, imageSvg: <Group /> },
+  { id: 2, name: "upwork", image: upwork, imageSvg: <Upwork /> },
+  { id: 3, name: "linkedin", image: linkedin, imageSvg: <Linkedin /> },
+  { id: 4, name: "instagram", image: instagram, imageSvg: <Instagram /> },
 ];

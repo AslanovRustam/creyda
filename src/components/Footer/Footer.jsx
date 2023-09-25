@@ -1,8 +1,12 @@
 import Container from "../Container/Container";
 import s from "./footer.module.css";
 import circle from "../../images/circleFooter.png";
-import { socials } from "../../data/data";
 // import { ReactComponent as PixelLine } from "../../images/pixelLine.svg";
+import { ReactComponent as Behance } from "../../images/socials/behance.svg";
+import { ReactComponent as Group } from "../../images/socials/Group.svg";
+import { ReactComponent as Upwork } from "../../images/socials/upwork.svg";
+import { ReactComponent as Linkedin } from "../../images/socials/linkedin.svg";
+import { ReactComponent as Instagram } from "../../images/socials/Instagram.svg";
 
 const pixelLine = (
   <svg
@@ -778,13 +782,31 @@ export default function Footer() {
           <div className={s.socialsContainer}>
             <p className={s.subTitleSocials}>We in socials:</p>
             <ul className={s.socialList}>
-              {socials.map(({ id, name, image }) => (
-                <li className={s.socialsItem} key={id}>
-                  <a href="#">
-                    <img className={s.icon} src={image} alt={name} />
-                  </a>
-                </li>
-              ))}
+              <li className={s.socialsItem}>
+                <a href="#">
+                  <Behance className={s.iconSocial} />
+                </a>
+              </li>
+              <li className={s.socialsItem}>
+                <a href="#">
+                  <Group className={s.iconSocial} />
+                </a>
+              </li>
+              <li className={s.socialsItem}>
+                <a href="#">
+                  <Upwork className={s.iconSocial} />
+                </a>
+              </li>
+              <li className={s.socialsItem}>
+                <a href="#">
+                  <Linkedin className={s.iconSocial} />
+                </a>
+              </li>
+              <li className={s.socialsItem}>
+                <a href="#">
+                  <Instagram className={s.iconSocial} />
+                </a>
+              </li>
             </ul>
           </div>
         </div>

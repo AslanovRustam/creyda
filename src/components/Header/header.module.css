@@ -9,12 +9,13 @@
   font-weight: 800;
   letter-spacing: 0.01em;
 }
+.logo a {
+  color: inherit;
+}
 .menu {
   display: none;
-  /* display: flex; */
   align-items: center;
   justify-content: center;
-  /* padding: 0.5em 1.111em; */
   padding: 0.27em 1.111em;
   margin-left: 2.67em;
   border: 0.1em solid var(--dark);
@@ -23,6 +24,9 @@
   font-size: 1.125em;
   font-weight: 400;
   cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  max-width: 100%;
+  overflow: hidden;
 }
 .dotMenu {
   fill: var(--dark);
@@ -36,6 +40,12 @@
 .dots {
   display: flex;
   margin-bottom: 0.4em;
+  max-width: 100%;
+  overflow: hidden;
+  transition: max-width 0.3s ease-in-out;
+}
+.widthDecrease {
+  max-width: 0;
 }
 /* .dot {
   margin-right: 0.556em;
@@ -48,36 +58,55 @@
 .dot:nth-child(3) {
   animation-delay: 0.4s;
 } */
+
+.text {
+  display: inline-block;
+  transition: all 0.3s ease-in-out;
+  opacity: 1;
+}
+.showText {
+  opacity: 1;
+  max-width: 100%;
+  transform: translateX(0);
+  transition: opacity 0.3s ease-in-out;
+}
+.hideText {
+  opacity: 0;
+  max-width: 0;
+  transform: translateX(100%);
+  transition: opacity 0.3s ease-in-out;
+}
 .list {
   display: flex;
   align-items: center;
 }
 .item {
+  position: relative;
   margin-right: 3em;
   text-align: center;
   font-family: RedHat;
   font-size: 1.125em;
+  color: var(--dark);
   line-height: 133.333%;
   text-transform: uppercase;
   cursor: pointer;
   transition: all 0.3s ease-in-out;
 }
-.item::after {
-  content: "";
-  display: block;
-  width: 0;
-  height: 0.1em;
-  background-color: var(--grey);
-  transition: all 0.3s ease-in-out;
-}
-.item:hover,
-.item:focus {
-  color: var(--grey);
-}
-.item:hover::after,
-.item:focus::after {
+.item::before {
+  content: attr(data-text);
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
+  height: 0;
+  color: var(--main);
+  overflow: hidden;
+  transition: all 0.5s ease-in-out;
 }
+.item:hover::before {
+  height: 100%;
+}
+
 .item a {
   color: inherit;
 }
@@ -91,6 +120,7 @@
   line-height: 133.333%;
   text-transform: uppercase;
 }
+
 @keyframes dotsMove {
   0% {
     transform: translate(0, 0);

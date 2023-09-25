@@ -12,6 +12,10 @@ export default function Cases() {
   const [active, setActive] = useState("all");
   const screenOrientation = useScreenOrientationPortrait();
 
+  const filteredCases = slidersData.filter((item) =>
+    item.name.includes(active)
+  );
+
   return (
     <section className={s.container} id="cases">
       <Container>
@@ -43,7 +47,7 @@ export default function Cases() {
       </Container>
       <div className={s.casesWrapper}>
         <Slider
-          data={slidersData}
+          data={filteredCases}
           btnProject
           navBtn
           slidesPerView={screenOrientation ? "0.9" : "1.5"}

@@ -1,7 +1,7 @@
 import s from "./haveAProject.module.css";
-import { ReactComponent as Stain } from "../../images/stain.svg";
 import PixelsCursor from "../PixelCursor/PixelCursor";
 import Button from "../Button/Button";
+import { ReactComponent as Stain } from "../../images/stain.svg";
 
 export default function HaveAProject() {
   const onBtnClick = () => {

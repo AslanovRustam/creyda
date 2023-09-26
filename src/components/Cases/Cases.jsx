@@ -1,12 +1,12 @@
-import InfoContainer from "../InfoContainer/InfoContainer";
-import { cases } from "../../data/data";
 import { useState } from "react";
+import InfoContainer from "../InfoContainer/InfoContainer";
 import Slider from "../Slider/Slider";
 import Container from "../Container/Container";
-import { slidersData } from "../../data/data";
-import s from "./cases.module.css";
 import SliderCaseSelection from "../Slider/SliderCaseSelection";
 import useScreenOrientationPortrait from "../../helpers/orientation";
+import { cases } from "../../data/data";
+import { slidersData } from "../../data/data";
+import s from "./cases.module.css";
 
 export default function Cases() {
   const [active, setActive] = useState("all");

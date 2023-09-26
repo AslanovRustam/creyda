@@ -1,12 +1,7 @@
 import Container from "../Container/Container";
 import s from "./footer.module.css";
 import circle from "../../images/circleFooter.png";
-// import { ReactComponent as PixelLine } from "../../images/pixelLine.svg";
-import { ReactComponent as Behance } from "../../images/socials/behance.svg";
-import { ReactComponent as Group } from "../../images/socials/Group.svg";
-import { ReactComponent as Upwork } from "../../images/socials/upwork.svg";
-import { ReactComponent as Linkedin } from "../../images/socials/linkedin.svg";
-import { ReactComponent as Instagram } from "../../images/socials/Instagram.svg";
+import SocialList from "../SocialList/SocialList";
 
 const pixelLine = (
   <svg
@@ -751,10 +746,12 @@ export default function Footer() {
       <Container>
         <div className={s.container}>
           <div className={s.infoContainer}>
-            <div className={s.logoContainer}>
-              <img className={s.image} src={circle} alt="logo" />
-              <p className={s.title}>Kreyda</p>
-            </div>
+            <a href="#">
+              <div className={s.logoContainer}>
+                <img className={s.image} src={circle} alt="logo" />
+                <p className={s.title}>Kreyda</p>
+              </div>
+            </a>
             <p className={s.subTitle}>Made in Ukraine</p>
             <ul className={s.linkList}>
               <li className={s.link}>
@@ -781,33 +778,149 @@ export default function Footer() {
           </ul>
           <div className={s.socialsContainer}>
             <p className={s.subTitleSocials}>We in socials:</p>
-            <ul className={s.socialList}>
+            <SocialList />
+            {/* <ul className={s.socialList}>
               <li className={s.socialsItem}>
                 <a href="#">
                   <Behance className={s.iconSocial} />
                 </a>
+                <svg
+                  className={s.circle}
+                  viewBox="0 0 42 42"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <circle
+                    cx="21"
+                    cy="21"
+                    r="20"
+                    fill="none"
+                    stroke="current"
+                    strokeWidth="2"
+                  >
+                    <animate
+                      attributeName="r"
+                      from="0"
+                      to="20"
+                      dur="2s"
+                      begin="0s"
+                      fill="freeze"
+                    />
+                  </circle>
+                </svg>
               </li>
               <li className={s.socialsItem}>
                 <a href="#">
                   <Group className={s.iconSocial} />
                 </a>
+                <svg
+                  className={s.circle}
+                  viewBox="0 0 42 42"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <circle
+                    cx="21"
+                    cy="21"
+                    r="20"
+                    fill="none"
+                    stroke="current"
+                    strokeWidth="2"
+                  >
+                    <animate
+                      attributeName="r"
+                      from="0"
+                      to="20"
+                      dur="2s"
+                      begin="0s"
+                      fill="freeze"
+                    />
+                  </circle>
+                </svg>
               </li>
               <li className={s.socialsItem}>
                 <a href="#">
                   <Upwork className={s.iconSocial} />
                 </a>
+                <svg
+                  className={s.circle}
+                  viewBox="0 0 42 42"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <circle
+                    cx="21"
+                    cy="21"
+                    r="20"
+                    fill="none"
+                    stroke="current"
+                    strokeWidth="2"
+                  >
+                    <animate
+                      attributeName="r"
+                      from="0"
+                      to="20"
+                      dur="2s"
+                      begin="0s"
+                      fill="freeze"
+                    />
+                  </circle>
+                </svg>
               </li>
               <li className={s.socialsItem}>
                 <a href="#">
                   <Linkedin className={s.iconSocial} />
                 </a>
+                <svg
+                  className={s.circle}
+                  viewBox="0 0 42 42"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <circle
+                    cx="21"
+                    cy="21"
+                    r="20"
+                    fill="none"
+                    stroke="current"
+                    strokeWidth="2"
+                  >
+                    <animate
+                      attributeName="r"
+                      from="0"
+                      to="20"
+                      dur="2s"
+                      begin="0s"
+                      fill="freeze"
+                    />
+                  </circle>
+                </svg>
               </li>
               <li className={s.socialsItem}>
                 <a href="#">
                   <Instagram className={s.iconSocial} />
                 </a>
+                <svg
+                  className={s.circle}
+                  viewBox="0 0 42 42"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <circle
+                    cx="21"
+                    cy="21"
+                    r="20"
+                    fill="none"
+                    stroke="current"
+                    strokeWidth="2"
+                  >
+                    <animate
+                      attributeName="r"
+                      from="0"
+                      to="20"
+                      dur="2s"
+                      begin="0s"
+                      fill="freeze"
+                    />
+                  </circle>
+                </svg>
               </li>
-            </ul>
+            </ul> */}
           </div>
         </div>
         {/* <PixelLine className={s.pixelLine} /> */}

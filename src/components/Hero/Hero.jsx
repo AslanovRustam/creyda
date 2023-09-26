@@ -1,10 +1,7 @@
 import InfoContainer from "../InfoContainer/InfoContainer";
-import s from "./hero.module.css";
-import circle from "../../images/circle.png";
-import Circle from "../Svgs/Circle";
-import Paralax from "../../helpers/Paralax";
-import ParalaxOnScroll from "../../helpers/ParalaxOnScroll";
 import Button from "../Button/Button";
+import circle from "../../images/circle.png";
+import s from "./hero.module.css";
 
 export default function Hero() {
   const onBtnClick = () => {

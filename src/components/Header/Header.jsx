@@ -1,7 +1,8 @@
-import s from "./header.module.css";
-import { ReactComponent as Dot } from "../../images/dot.svg";
 import { useState } from "react";
+import { CSSTransition } from "react-transition-group";
 import Modal from "../Modal/Modal";
+import { ReactComponent as Dot } from "../../images/dot.svg";
+import s from "./header.module.css";
 
 export default function Header() {
   const [showModal, setShowmodal] = useState(false);
@@ -35,8 +36,8 @@ export default function Header() {
           {/* <p className={`${s.text} ${showModal ? s.showText : s.hideText}`}>
             {showModal ? "X" : "Menu"}
           </p> */}
-          <p>
-            <span
+          <p className={s.textAnim}>
+            {/* <span
               className={`${s.text} ${showModal ? s.showText : s.hideText}`}
             >
               X
@@ -45,7 +46,23 @@ export default function Header() {
               className={`${s.text} ${showModal ? s.hideText : s.showText}`}
             >
               Menu
-            </span>
+            </span> */}
+            <CSSTransition
+              in={showModal}
+              timeout={1000} // Должно совпадать с продолжительностью вашей анимации в CSS
+              classNames={{
+                enter: s.showTextEntering,
+                enterActive: s.showTextEntered,
+                exit: s.hideTextExiting,
+                exitActive: s.hideTextExited,
+              }}
+            >
+              {showModal ? (
+                <span className={`${s.text}`}>X</span>
+              ) : (
+                <span className={`${s.text}`}>Menu</span>
+              )}
+            </CSSTransition>
           </p>
         </div>
         <ul className={s.list}>

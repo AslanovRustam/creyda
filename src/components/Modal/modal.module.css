@@ -9,7 +9,7 @@
   top: 10em;
   left: 0;
   width: 100vw;
-  height: 100vh;
+  height: 100dvh;
   padding: 2em 0;
   background: var(--white);
   overflow: auto;
@@ -58,7 +58,7 @@
 }
 .socialsContainer {
   position: absolute;
-  bottom: 10em;
+  bottom: 15em;
 }
 .socialList {
   display: flex;
@@ -67,7 +67,6 @@
   width: 5.966em;
   height: 5.966em;
   padding: 0.5625em;
-
   border: 0.11em solid var(--dark);
   border-radius: 50%;
   cursor: pointer;

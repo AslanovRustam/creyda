@@ -1,7 +1,7 @@
-import s from "./contacts.module.css";
-import { ReactComponent as Design } from "../../images/services/graphic.svg";
-import Button from "../Button/Button";
 import { useState } from "react";
+import Button from "../Button/Button";
+import { ReactComponent as Design } from "../../images/services/graphic.svg";
+import s from "./contacts.module.css";
 
 export default function Contacts() {
   const [formData, setFormData] = useState({

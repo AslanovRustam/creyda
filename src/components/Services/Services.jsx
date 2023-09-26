@@ -1,8 +1,7 @@
 import InfoContainer from "../InfoContainer/InfoContainer";
-import Paralax from "../../helpers/Paralax";
+import useScreenOrientationPortrait from "../../helpers/orientation";
 import { services } from "../../data/data";
 import s from "./services.module.css";
-import useScreenOrientationPortrait from "../../helpers/orientation";
 
 export default function Services() {
   const screenOrientation = useScreenOrientationPortrait();

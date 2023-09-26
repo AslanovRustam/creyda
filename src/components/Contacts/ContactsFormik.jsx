@@ -1,6 +1,6 @@
 import { useFormik } from "formik";
-import { ReactComponent as Design } from "../../images/services/graphic.svg";
 import Button from "../Button/Button";
+import { ReactComponent as Design } from "../../images/services/graphic.svg";
 import s from "./contacts.module.css";
 
 export default function ContactsFormik() {

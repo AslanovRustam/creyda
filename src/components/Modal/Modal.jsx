@@ -1,10 +1,6 @@
 import { createPortal } from "react-dom";
 import { useEffect } from "react";
-import { ReactComponent as Behance } from "../../images/socials/behance.svg";
-import { ReactComponent as Group } from "../../images/socials/Group.svg";
-import { ReactComponent as Upwork } from "../../images/socials/upwork.svg";
-import { ReactComponent as Linkedin } from "../../images/socials/linkedin.svg";
-import { ReactComponent as Instagram } from "../../images/socials/Instagram.svg";
+import SocialList from "../SocialList/SocialList";
 import s from "./modal.module.css";
 
 const modalRoot = document.querySelector("#modal");
@@ -41,7 +37,8 @@ export default function Modal({ onClose, showModal }) {
         <div className={s.lang}>EN</div>
         <div className={s.socialsContainer}>
           <p className={s.subTitleSocials}>We in socials:</p>
-          <ul className={s.socialList}>
+          <SocialList modal />
+          {/* <ul className={s.socialList}>
             <li className={s.socialsItem}>
               <a href="#">
                 <Behance className={s.iconSocial} />
@@ -67,7 +64,7 @@ export default function Modal({ onClose, showModal }) {
                 <Instagram className={s.iconSocial} />
               </a>
             </li>
-          </ul>
+          </ul> */}
         </div>
       </div>
     </div>,

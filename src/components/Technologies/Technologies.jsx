@@ -1,8 +1,6 @@
-import s from "./technologies.module.css";
-import { technologies } from "../../data/data";
 import InfoContainer from "../InfoContainer/InfoContainer";
-// import Dots from "../Svgs/Dots";
-// import { ReactComponent as Dots } from "../../images/dots.svg";
+import { technologies } from "../../data/data";
+import s from "./technologies.module.css";
 
 export default function Technologies() {
   return (

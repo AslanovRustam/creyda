@@ -1,18 +1,18 @@
-import s from "../components/Services/services.module.css";
-import uiDes from "../images/services/design.svg";
-import graphic from "../images/services/graphic.svg";
-import logo from "../images/services/logo.svg";
-import motion from "../images/services/motion.svg";
-import ilustration from "../images/services/illustration.svg";
-import threeD from "../images/services/3d.svg";
-import development from "../images/services/development.svg";
-import { ReactComponent as UiDes } from "../images/services/design.svg";
-import { ReactComponent as Graphic } from "../images/services/graphic.svg";
-import { ReactComponent as Logo } from "../images/services/logo.svg";
-import { ReactComponent as Motion } from "../images/services/motion.svg";
-import { ReactComponent as Ilustration } from "../images/services/illustration.svg";
-import { ReactComponent as ThreeD } from "../images/services/3d.svg";
-import { ReactComponent as Development } from "../images/services/development.svg";
+// import s from "../components/Services/services.module.css";
+// import uiDes from "../images/services/design.svg";
+// import graphic from "../images/services/graphic.svg";
+// import logo from "../images/services/logo.svg";
+// import motion from "../images/services/motion.svg";
+// import ilustration from "../images/services/illustration.svg";
+// import threeD from "../images/services/3d.svg";
+// import development from "../images/services/development.svg";
+// import { ReactComponent as UiDes } from "../images/services/design.svg";
+// import { ReactComponent as Graphic } from "../images/services/graphic.svg";
+// import { ReactComponent as Logo } from "../images/services/logo.svg";
+// import { ReactComponent as Motion } from "../images/services/motion.svg";
+// import { ReactComponent as Ilustration } from "../images/services/illustration.svg";
+// import { ReactComponent as ThreeD } from "../images/services/3d.svg";
+// import { ReactComponent as Development } from "../images/services/development.svg";
 import fairspin from "../images/fairspin.png";
 import ae from "../images/technologies/AE.png";
 import figma from "../images/technologies/Figma.png";
@@ -37,57 +37,57 @@ import { ReactComponent as Upwork } from "../images/socials/upwork.svg";
 import { ReactComponent as Linkedin } from "../images/socials/linkedin.svg";
 import { ReactComponent as Instagram } from "../images/socials/Instagram.svg";
 
-export const services = [
-  {
-    id: "ui/ux",
-    title: "UI/UX Design",
-    titleMob: "UI/UX Design",
-    image: <UiDes className={`${s.image} ${s.show}`} />,
-    picture: uiDes,
-  },
-  {
-    id: "graphic design",
-    title: "Graphic <br> Design",
-    titleMob: "Graphic <br> Design",
-    image: <Graphic className={`${s.image} ${s.show}`} />,
-    picture: graphic,
-  },
-  {
-    id: "logo & identity",
-    title: "Logo <br>& Identity",
-    titleMob: "Logo <br>& Identity",
-    image: <Logo className={`${s.image} ${s.show}`} />,
-    picture: logo,
-  },
-  {
-    id: "motion",
-    title: "Motion<br> Design",
-    titleMob: "Motion<br> Design",
-    image: <Motion className={`${s.image} ${s.show}`} />,
-    picture: motion,
-  },
-  {
-    id: "illustration",
-    title: "Illustration",
-    titleMob: "Illustration",
-    image: <Ilustration className={`${s.image} ${s.show}`} />,
-    picture: ilustration,
-  },
-  {
-    id: "3d",
-    title: "3D Design",
-    titleMob: "3D Design",
-    image: <ThreeD className={`${s.image} ${s.show}`} />,
-    picture: threeD,
-  },
-  {
-    id: "development",
-    title: "Development<br> and<br> programming",
-    titleMob: "Development and programming",
-    image: <Development className={`${s.image} ${s.show}`} />,
-    picture: development,
-  },
-];
+// export const services = [
+//   {
+//     id: "ui/ux",
+//     title: "UI/UX Design",
+//     titleMob: "UI/UX Design",
+//     image: <UiDes className={`${s.image} ${s.show}`} />,
+//     picture: uiDes,
+//   },
+//   {
+//     id: "graphic design",
+//     title: "Graphic <br> Design",
+//     titleMob: "Graphic <br> Design",
+//     image: <Graphic className={`${s.image} ${s.show}`} />,
+//     picture: graphic,
+//   },
+//   {
+//     id: "logo & identity",
+//     title: "Logo <br>& Identity",
+//     titleMob: "Logo <br>& Identity",
+//     image: <Logo className={`${s.image} ${s.show}`} />,
+//     picture: logo,
+//   },
+//   {
+//     id: "motion",
+//     title: "Motion<br> Design",
+//     titleMob: "Motion<br> Design",
+//     image: <Motion className={`${s.image} ${s.show}`} />,
+//     picture: motion,
+//   },
+//   {
+//     id: "illustration",
+//     title: "Illustration",
+//     titleMob: "Illustration",
+//     image: <Ilustration className={`${s.image} ${s.show}`} />,
+//     picture: ilustration,
+//   },
+//   {
+//     id: "3d",
+//     title: "3D Design",
+//     titleMob: "3D Design",
+//     image: <ThreeD className={`${s.image} ${s.show}`} />,
+//     picture: threeD,
+//   },
+//   {
+//     id: "development",
+//     title: "Development<br> and<br> programming",
+//     titleMob: "Development and programming",
+//     image: <Development className={`${s.image} ${s.show}`} />,
+//     picture: development,
+//   },
+// ];
 
 export const cases = [
   { id: "all", name: "all" },

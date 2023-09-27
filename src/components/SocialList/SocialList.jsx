@@ -1,9 +1,9 @@
-import s from "./sociallist.module.css";
 import { ReactComponent as Behance } from "../../images/socials/behance.svg";
 import { ReactComponent as Group } from "../../images/socials/Group.svg";
 import { ReactComponent as Upwork } from "../../images/socials/upwork.svg";
 import { ReactComponent as Linkedin } from "../../images/socials/linkedin.svg";
 import { ReactComponent as Instagram } from "../../images/socials/Instagram.svg";
+import s from "./sociallist.module.css";
 
 export default function SocialList({ modal }) {
   return (

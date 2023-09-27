@@ -1151,6 +1151,7 @@ export default function Technologies() {
           </li>
         ))}
       </ul>
+      {/* <LevitateDots /> */}
     </section>
   );
 }

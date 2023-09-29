@@ -104,9 +104,10 @@
     font-size: 1.7em;
   }
   .imageContainer {
-    width: 40.48em;
+    display: none;
+    /* width: 40.48em;
     height: 40.48em;
-    border-radius: 6.39em;
+    border-radius: 6.39em; */
   }
   .icon {
     bottom: -2em;

@@ -1,5 +1,6 @@
 import InfoContainer from "../InfoContainer/InfoContainer";
 import { technologies } from "../../data/data";
+import SliderTech from "../Slider/SliderTech";
 import s from "./technologies.module.css";
 
 export default function Technologies() {
@@ -7,10 +8,9 @@ export default function Technologies() {
     <section className={s.container} id="technologies">
       <InfoContainer text="Technologies we use" />
       <ul className={s.list}>
-        {technologies.map(({ name, image, width }) => (
+        {/* {technologies.map(({ name, image, width }) => (
           <li className={s.item} key={name}>
             <img className={s.image} src={image} alt={name} />
-            {/* <Dots className={s.dots} /> */}
             <svg
               className={`${s.dots} ${!width && s.smallItem}`}
               viewBox="0 0 480 59"
@@ -1149,7 +1149,8 @@ export default function Technologies() {
               />
             </svg>
           </li>
-        ))}
+        ))} */}
+        <SliderTech data={technologies} />
       </ul>
       {/* <LevitateDots /> */}
     </section>

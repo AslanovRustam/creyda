@@ -103,7 +103,7 @@ export const cases = [
 export const slidersData = [
   {
     id: 0,
-    title: "Fairspin landings design",
+    title: "Fairspin landings design1",
     infoContainer: ["Branding", "Design"],
     name: ["all", "graphic design"],
     image: fairspin,
@@ -133,17 +133,17 @@ export const slidersData = [
 
 export const technologies = [
   { name: "ae", image: ae, width: false },
-  { name: "figma", image: figma, width: true },
+  { name: "figma", image: figma, width: false },
   { name: "css", image: css, width: false },
   { name: "react", image: react, width: false },
-  { name: "js", image: js, width: true },
+  { name: "js", image: js, width: false },
   { name: "paint", image: paint, width: false },
-  { name: "blender", image: blender, width: true },
+  { name: "blender", image: blender, width: false },
   { name: "boat", image: boat, width: false },
   { name: "ps", image: ps, width: false },
   { name: "html", image: html, width: false },
   { name: "ai", image: ai, width: false },
-  { name: "procreate", image: procreate, width: true },
+  { name: "procreate", image: procreate, width: false },
 ];
 
 export const blog = [

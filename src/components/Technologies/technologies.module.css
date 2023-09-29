@@ -116,12 +116,12 @@
   }
 }
 @media (orientation: portrait) {
-  .list {
+  /* .list {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(8, 1fr);
     grid-column-gap: 0.15em;
     grid-row-gap: 0.15em;
-  }
+  }item
   .item:first-child {
     grid-area: 4 / 2 / 5 / 3;
   }
@@ -157,6 +157,9 @@
   }
   .item:nth-child(12) {
     grid-area: 8 / 1 / 9 / 3;
+  } */
+  .list {
+    display: block;
   }
   .dots {
     height: auto;

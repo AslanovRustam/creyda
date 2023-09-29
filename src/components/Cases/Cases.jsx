@@ -50,7 +50,7 @@ export default function Cases() {
           data={filteredCases}
           btnProject
           navBtn
-          slidesPerView={screenOrientation ? "0.9" : "1.5"}
+          slidesPerView={screenOrientation ? "1.05" : "1.5"}
         />
       </div>
     </section>

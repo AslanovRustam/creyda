@@ -16,13 +16,13 @@ export default function ContactsFormik() {
       errors.name = "Enter a valid name";
     }
 
-    if (!values.number) {
-      errors.number = "This field is required";
-    } else if (!/^(\+?[0-9.\(\)\-\s]*)$/.test(values.number)) {
-      errors.number = "Invalid phone number";
-    } else if (values.number.length < 5) {
-      errors.number = "Too short phone number";
-    }
+    // if (!values.number) {
+    //   errors.number = "This field is required";
+    // } else if (!/^(\+?[0-9.\(\)\-\s]*)$/.test(values.number)) {
+    //   errors.number = "Invalid phone number";
+    // } else if (values.number.length < 5) {
+    //   errors.number = "Too short phone number";
+    // }
 
     if (!values.email) {
       errors.email = "This field is required";
@@ -73,9 +73,7 @@ export default function ContactsFormik() {
         <label className={s.label}>
           <p className={s.name}>Enter your phone number</p>
           <input
-            className={`${s.input} ${
-              formik.touched.number && formik.errors.number && s.errorBorder
-            }`}
+            className={s.input}
             id="number"
             name="number"
             onChange={formik.handleChange}
@@ -84,9 +82,6 @@ export default function ContactsFormik() {
             type="tel"
             placeholder="NUMBER"
           />
-          {formik.touched.number && formik.errors.number ? (
-            <div className={s.errorMessage}>{formik.errors.number}</div>
-          ) : null}
         </label>
         <label className={s.label}>
           <p className={s.name}>Enter your email</p>

@@ -1,0 +1,74 @@
+.item {
+  position: relative;
+  padding: 4.6875em;
+  border-radius: 2.8125em;
+  border: 0.125em solid var(--dark);
+  text-align: center;
+  overflow: hidden;
+  transition: all 0.3s ease-in-out;
+}
+.image {
+  width: auto;
+  height: 5.1em;
+}
+
+.item:hover .dots,
+.item:focus .dots {
+  fill: var(--dark);
+}
+.item:hover,
+.item:focus {
+  background-color: var(--main);
+  border-color: var(--main);
+}
+.dots {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 3.6875em;
+  /* width: 100%; */
+  transition: all 0.3s ease-in-out;
+}
+.item:hover .dotsTechLevitate,
+.item:focus .dotsTechLevitate {
+  animation-play-state: running;
+}
+.dotsTechLevitate {
+  animation: 0.75s dotsLevitate ease-in-out infinite;
+  animation-play-state: paused;
+}
+.dotsTechLevitate:nth-child(2n + 1) {
+  animation-delay: 0.3s;
+}
+.dotsTechLevitate:nth-child(3n + 1) {
+  animation-delay: 0.4s;
+}
+.dotsTechLevitate:nth-child(4n + 1) {
+  animation-delay: 0.5s;
+}
+.dotsTechLevitate:nth-child(5n + 1) {
+  animation-delay: 0.75s;
+}
+.dotsTechLevitate:nth-child(6n + 1) {
+  animation-delay: 0.2s;
+}
+.dotsTechLevitate:nth-child(7n + 1) {
+  animation-delay: 0.1s;
+}
+.dotsTechLevitate:nth-child(8n + 1) {
+  animation-delay: 0.6s;
+}
+.smallItem {
+  height: 5.5em;
+}
+@keyframes dotsLevitate {
+  0% {
+    opacity: 0;
+    transform: translate(0, 0);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate(0, -0.5em);
+  }
+}

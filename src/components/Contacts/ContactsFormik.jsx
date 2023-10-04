@@ -34,6 +34,19 @@ export default function ContactsFormik() {
     return errors;
   };
 
+  // const formik = useFormik({
+  //   initialValues: {
+  //     name: "",
+  //     number: "",
+  //     email: "",
+  //     message: "",
+  //   },
+  //   validate,
+  //   onSubmit: (values, { resetForm }) => {
+  //     console.log(values);
+  //     resetForm();
+  //   },
+  // });
   const formik = useFormik({
     initialValues: {
       name: "",
@@ -42,8 +55,20 @@ export default function ContactsFormik() {
       message: "",
     },
     validate,
-    onSubmit: (values, { resetForm }) => {
-      console.log(values);
+    onSubmit: async (values, { resetForm }) => {
+      const response = await fetch("https://aslanovrg@gmail.com", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(values),
+      });
+
+      if (response.status === 200) {
+        console.log("good");
+      } else {
+        console.log("bad");
+      }
       resetForm();
     },
   });

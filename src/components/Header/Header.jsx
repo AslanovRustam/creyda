@@ -2,6 +2,7 @@ import { useState } from "react";
 import { CSSTransition } from "react-transition-group";
 import Modal from "../Modal/Modal";
 import { ReactComponent as Dot } from "../../images/dot.svg";
+import logo from "../../images/circle.png";
 import s from "./header.module.css";
 
 export default function Header() {
@@ -15,6 +16,7 @@ export default function Header() {
     <>
       <header className={s.header}>
         <h1 className={s.logo}>
+          <img className={s.logoIcon} src={logo} alt="Creyda logo" />
           <a href="#">Kreyda</a>
         </h1>
         <div

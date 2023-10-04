@@ -21,6 +21,28 @@
   overflow: hidden;
   /* cursor: pointer; */
   transition: all 0.3s ease-in-out;
+  /* transform: translateX(10em); */
+}
+.itemFirst {
+  transform: translateX(-10em);
+}
+.itemSecond {
+  transform: translateX(10em);
+}
+.itemThird {
+  transform: translateX(-23em);
+}
+.itemFourth {
+  transform: translate(-23em, 13em);
+}
+.itemFifth {
+  transform: translateX(25em);
+}
+.itemSix {
+  transform: translateX(-12em);
+}
+.itemSeven {
+  transform: translateX(22em);
 }
 /* .item:first-child {
   grid-area: 1 / 1 / 2 / 3;
@@ -43,6 +65,9 @@
 .item:nth-child(7) {
   grid-area: 3 / 2 / 4 / 4;
 } */
+ul.list li:nth-child(2) {
+  transform: translateY(20em);
+}
 .list div:first-child {
   grid-area: 1 / 1 / 2 / 3;
 }
@@ -72,6 +97,9 @@
   opacity: 0;
   display: none;
   position: absolute;
+  /* width: 28.4375em; */
+  /* right: -13em; */
+  /* top: 8em; */
   width: 22.4375em;
   right: -5em;
   top: 12em;

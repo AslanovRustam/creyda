@@ -8,9 +8,15 @@
   font-size: 2.25em;
   font-weight: 800;
   letter-spacing: 0.01em;
+  display: flex;
+  align-items: center;
 }
 .logo a {
   color: inherit;
+}
+.logoIcon {
+  width: 1.16em;
+  margin-right: 0.33em;
 }
 .menu {
   display: none;
@@ -133,6 +139,7 @@
   color: var(--main);
   overflow: hidden;
   transition: all 0.5s ease-in-out;
+  pointer-events: none;
 }
 .item:hover::before {
   height: 100%;
@@ -167,7 +174,8 @@
     display: flex;
   }
   .list,
-  .lang {
+  .lang,
+  .logoIcon {
     display: none;
   }
   .logo {

@@ -169,8 +169,8 @@ export const blog = [
 
 export const socials = [
   { id: 0, name: "behance", image: behance, imageSvg: <Behance /> },
-  { id: 1, name: "group", image: group, imageSvg: <Group /> },
+  // { id: 1, name: "group", image: group, imageSvg: <Group /> },
   { id: 2, name: "upwork", image: upwork, imageSvg: <Upwork /> },
   { id: 3, name: "linkedin", image: linkedin, imageSvg: <Linkedin /> },
-  { id: 4, name: "instagram", image: instagram, imageSvg: <Instagram /> },
+  // { id: 4, name: "instagram", image: instagram, imageSvg: <Instagram /> },
 ];

@@ -770,16 +770,17 @@ export default function Footer() {
               <a href="#cases">Best cases</a>
             </li>
             <li className={s.item}>
+              <div className={s.socialsContainer}>
+                <p className={s.subTitleSocials}>We in socials:</p>
+                <SocialList />
+              </div>
               <a href="#technologies">Technologies we use</a>
             </li>
-            <li className={s.item}>
-              <a href="#write">write to us</a>
-            </li>
           </ul>
-          <div className={s.socialsContainer}>
+          {/* <div className={s.socialsContainer}>
             <p className={s.subTitleSocials}>We in socials:</p>
             <SocialList />
-          </div>
+          </div> */}
         </div>
         {/* <PixelLine className={s.pixelLine} /> */}
         <ul className={s.pixelLine}>

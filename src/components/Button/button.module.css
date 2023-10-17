@@ -3,7 +3,7 @@
 }
 .button {
   position: relative;
-  padding: 0.5em 2em;
+  padding: 0.5em 1.11em;
   border-radius: 3.125em;
   border: none;
   background: var(--main);

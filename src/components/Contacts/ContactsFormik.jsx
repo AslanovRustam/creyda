@@ -1,4 +1,5 @@
 import { useFormik } from "formik";
+import toast, { Toaster } from "react-hot-toast";
 import Button from "../Button/Button";
 import { ReactComponent as Design } from "../../images/services/graphic.svg";
 import s from "./contacts.module.css";
@@ -34,40 +35,37 @@ export default function ContactsFormik() {
     return errors;
   };
 
-  // const formik = useFormik({
-  //   initialValues: {
-  //     name: "",
-  //     number: "",
-  //     email: "",
-  //     message: "",
-  //   },
-  //   validate,
-  //   onSubmit: (values, { resetForm }) => {
-  //     console.log(values);
-  //     resetForm();
-  //   },
-  // });
   const formik = useFormik({
     initialValues: {
       name: "",
       number: "",
       email: "",
       message: "",
+      privacy_agree: false,
     },
     validate,
     onSubmit: async (values, { resetForm }) => {
-      const response = await fetch("https://aslanovrg@gmail.com", {
+      if (values.privacy_agree) {
+        return;
+      }
+
+      const response = await fetch("https://www.kreyda.agency/action.php", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
         },
-        body: JSON.stringify(values),
+        body: JSON.stringify({
+          email: values.email,
+          number: values.number,
+          name: values.name,
+          message: values.message,
+        }),
       });
 
       if (response.status === 200) {
-        console.log("good");
+        toast.success(`Thank you ${values.name}, we will contact you soon`);
       } else {
-        console.log("bad");
+        toast.error("Something went wrong, try again later");
       }
       resetForm();
     },
@@ -139,6 +137,17 @@ export default function ContactsFormik() {
             placeholder="Message"
           />
         </label>
+
+        <input
+          className={s.checkbox}
+          id="checkbox"
+          name="privacy_agree"
+          onChange={formik.handleChange}
+          onBlur={formik.handleBlur}
+          value={formik.values.checkbox}
+          type="checkbox"
+        />
+
         <Button
           text="Send"
           type="submit"
@@ -149,6 +158,24 @@ export default function ContactsFormik() {
       <div className={s.imageContainer}>
         <Design className={s.icon} />
       </div>
+      <Toaster
+        position="top-right"
+        reverseOrder={false}
+        toastOptions={{
+          success: {
+            iconTheme: {
+              primary: "#daff8c",
+              secondary: "black",
+            },
+          },
+          error: {
+            iconTheme: {
+              primary: "#eb5757",
+              secondary: "#ffffff",
+            },
+          },
+        }}
+      />
     </div>
   );
 }

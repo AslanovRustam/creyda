@@ -4,6 +4,7 @@ import Modal from "../Modal/Modal";
 import { ReactComponent as Dot } from "../../images/dot.svg";
 import logo from "../../images/circle.png";
 import s from "./header.module.css";
+import Button from "../Button/Button";
 
 export default function Header() {
   const [showModal, setShowmodal] = useState(false);
@@ -34,21 +35,8 @@ export default function Header() {
               <Dot className={s.dotMenu} />
             </p>
           </div>
-          {/* <p className={s.text}>{showModal ? "X" : "Menu"}</p> */}
-          {/* <p className={`${s.text} ${showModal ? s.showText : s.hideText}`}>
-            {showModal ? "X" : "Menu"}
-          </p> */}
+
           <p className={s.textAnim}>
-            {/* <span
-              className={`${s.text} ${showModal ? s.showText : s.hideText}`}
-            >
-              X
-            </span>
-            <span
-              className={`${s.text} ${showModal ? s.hideText : s.showText}`}
-            >
-              Menu
-            </span> */}
             <CSSTransition
               in={showModal}
               timeout={1000} // Должно совпадать с продолжительностью вашей анимации в CSS
@@ -78,10 +66,16 @@ export default function Header() {
             <a href="#technologies">Technologies we use</a>
           </li>
           <li className={s.item} data-text="write to us">
-            <a href="#write">write to us</a>
+            <a href="#write">
+              <Button text="make it great" colorBlack size="1.125em" />
+            </a>
           </li>
         </ul>
-        <div className={s.lang}>EN</div>
+        {/* <a href="#write">
+          <Button text="make it great" colorBlack size="1.125em" />
+        </a> */}
+
+        {/* <div className={s.lang}>EN</div> */}
       </header>
       <Modal onClose={togleModal} showModal={showModal} />
     </>

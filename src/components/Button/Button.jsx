@@ -1,11 +1,12 @@
 import s from "./button.module.css";
 
-export default function Button({ text, type, onBtnClick, colorBlack }) {
+export default function Button({ text, type, onBtnClick, colorBlack, size }) {
   return (
     <div className={s.btnContainer}>
       <button
         type={type}
         className={`${s.button} ${colorBlack && s.colorBlack}`}
+        style={{ fontSize: size }}
         onClick={onBtnClick}
       >
         {text}

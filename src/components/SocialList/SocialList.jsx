@@ -36,7 +36,7 @@ export default function SocialList({ modal }) {
           </circle>
         </svg>
       </li>
-      <li className={`${s.socialsItem} ${modal && s.borderModal}`}>
+      {/* <li className={`${s.socialsItem} ${modal && s.borderModal}`}>
         <a href="#">
           <Group className={`${s.iconSocial} ${modal && s.colorModal}`} />
         </a>
@@ -63,7 +63,7 @@ export default function SocialList({ modal }) {
             />
           </circle>
         </svg>
-      </li>
+      </li> */}
       <li className={`${s.socialsItem} ${modal && s.borderModal}`}>
         <a href="#">
           <Upwork className={`${s.iconSocial} ${modal && s.colorModal}`} />
@@ -120,7 +120,7 @@ export default function SocialList({ modal }) {
           </circle>
         </svg>
       </li>
-      <li className={`${s.socialsItem} ${modal && s.borderModal}`}>
+      {/* <li className={`${s.socialsItem} ${modal && s.borderModal}`}>
         <a href="#">
           <Instagram className={`${s.iconSocial} ${modal && s.colorModal}`} />
         </a>
@@ -147,7 +147,7 @@ export default function SocialList({ modal }) {
             />
           </circle>
         </svg>
-      </li>
+      </li> */}
     </ul>
   );
 }

@@ -7,7 +7,7 @@
   width: 2.875em;
   height: 2.875em;
   padding: 0.5625em;
-  border: 0.11em solid var(--white);
+  border: 0.11em solid var(--main);
   border-radius: 50%;
   cursor: pointer;
   transition: background-color 1s ease-in-out;
@@ -44,7 +44,7 @@
   animation: reverseFillAnimation 0.5s ease-in-out forwards;
 }
 .iconSocial {
-  color: var(--white);
+  color: var(--main);
   transition: all 0.3s ease-in-out;
   z-index: 3;
 }

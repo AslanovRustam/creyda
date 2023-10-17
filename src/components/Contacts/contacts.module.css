@@ -72,6 +72,10 @@
   border: 0.125em solid var(--dark);
   overflow: hidden;
 }
+.checkbox {
+  display: none;
+  opacity: 0;
+}
 @media (orientation: portrait) {
   .container {
     display: flex;

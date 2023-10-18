@@ -1,0 +1,80 @@
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  bottom: 0;
+  width: 89.6em;
+  margin-bottom: 1.5em;
+  /* margin-left: 0.85em; */
+  padding: 1.5em;
+  border-radius: 1.5em;
+  border: 0.125em solid var(--grey);
+  background: var(--white);
+  backdrop-filter: blur(0.3125em);
+  z-index: 2;
+}
+.close {
+  display: none;
+}
+.cookie {
+  display: flex;
+  align-items: center;
+}
+.image {
+  width: 3.5em;
+  margin-right: 1em;
+}
+.title {
+  color: var(--dark);
+  font-family: RedHat;
+  font-size: 2em;
+}
+.buttons {
+  /* margin-left: 32.55em; */
+}
+.btnOK,
+.btnCancel {
+  text-align: center;
+  font-family: RedHat;
+  font-size: 1.125em;
+  line-height: 133.333%;
+  text-transform: uppercase;
+  border: 0.1em solid transparent;
+  border-radius: 2.333em;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+.btnOK {
+  padding: 0.5em 2.22em;
+  margin-right: 0.444em;
+  color: var(--dark);
+  background: var(--main);
+}
+.btnCancel {
+  padding: 0.5em 1.5em;
+  color: var(--grey);
+  background: transparent;
+  border-color: var(--grey);
+}
+.btnOK:hover,
+.btnOK:focus,
+.btnCancel:hover,
+.btnCancel:focus {
+  transform: scale(1.05);
+}
+@media (orientation: portrait) {
+  .container {
+    width: 29.3em;
+    font-size: 1.42em;
+    flex-direction: column;
+  }
+  .buttons {
+    width: 100%;
+    margin-top: 1.6em;
+  }
+  .btnOK,
+  .btnCancel {
+    width: 11em;
+  }
+}

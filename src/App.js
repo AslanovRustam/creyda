@@ -1,6 +1,7 @@
 import Cases from "./components/Cases/Cases";
 import ContactsFormik from "./components/Contacts/ContactsFormik";
 import Container from "./components/Container/Container";
+import Cookies from "./components/Coolies/Cookies";
 import Footer from "./components/Footer/Footer";
 import HaveAProject from "./components/HaveAProject/HaveAProject";
 import Header from "./components/Header/Header";
@@ -12,6 +13,7 @@ function App() {
   return (
     <>
       <Container>
+        <Cookies />
         <Header />
         <Hero />
         <Services />

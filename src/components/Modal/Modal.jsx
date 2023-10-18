@@ -30,41 +30,14 @@ export default function Modal({ onClose, showModal }) {
           <li className={s.item}>
             <a href="#technologies">Technologies we use</a>
           </li>
-          <li className={s.item}>
+          {/* <li className={s.item}>
             <a href="#write">write to us</a>
-          </li>
+          </li> */}
         </ul>
-        <div className={s.lang}>EN</div>
+        {/* <div className={s.lang}>EN</div> */}
         <div className={s.socialsContainer}>
           <p className={s.subTitleSocials}>We in socials:</p>
           <SocialList modal />
-          {/* <ul className={s.socialList}>
-            <li className={s.socialsItem}>
-              <a href="#">
-                <Behance className={s.iconSocial} />
-              </a>
-            </li>
-            <li className={s.socialsItem}>
-              <a href="#">
-                <Group className={s.iconSocial} />
-              </a>
-            </li>
-            <li className={s.socialsItem}>
-              <a href="#">
-                <Upwork className={s.iconSocial} />
-              </a>
-            </li>
-            <li className={s.socialsItem}>
-              <a href="#">
-                <Linkedin className={s.iconSocial} />
-              </a>
-            </li>
-            <li className={s.socialsItem}>
-              <a href="#">
-                <Instagram className={s.iconSocial} />
-              </a>
-            </li>
-          </ul> */}
         </div>
       </div>
     </div>,

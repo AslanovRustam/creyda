@@ -51,7 +51,7 @@
   transition: max-width 0.3s ease-in-out;
 }
 .widthDecrease {
-  max-width: 0;
+  max-width: 3em;
 }
 /* .dot {
   margin-right: 0.556em;

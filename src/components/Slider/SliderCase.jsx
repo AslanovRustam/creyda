@@ -18,7 +18,7 @@ export default function SliderCase() {
     <div>
       <Swiper
         modules={[Navigation, Scrollbar, A11y]}
-        spaceBetween={0}
+        spaceBetween={2}
         slidesPerView={1.5}
         // navigation
         // scrollbar={{ draggable: true }}

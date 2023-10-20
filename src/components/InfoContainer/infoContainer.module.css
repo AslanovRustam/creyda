@@ -12,6 +12,12 @@
   text-transform: uppercase;
   transition: all 0.3s ease-in-out;
 }
+.black {
+  background-color: var(--dark);
+  color: var(--white);
+  border-color: var(--white);
+  position: relative;
+}
 .active {
   background: var(--main);
   color: var(--dark);

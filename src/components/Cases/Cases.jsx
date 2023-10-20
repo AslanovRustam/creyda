@@ -29,19 +29,6 @@ export default function Cases() {
               setActive={setActive}
               active={active}
             />
-            {/* {cases.map((data) => (
-              <li
-                key={data.id}
-                className={s.item}
-                onClick={() => setActive(data.id)}
-              >
-                <InfoContainer
-                  text={data.name}
-                  activeCase={active === data.id}
-                  fontSize
-                />
-              </li>
-            ))} */}
           </ul>
         </div>
       </Container>

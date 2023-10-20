@@ -6,12 +6,13 @@ export default function InfoContainer({
   activeCase,
   sliderInActiv,
   fontSize,
+  black,
 }) {
   return (
     <div
       className={`${s.container} ${activeCase && s.active} ${
         sliderInActiv && s.sliderInActiv
-      } ${fontSize && s.changeFontSize}`}
+      } ${fontSize && s.changeFontSize} ${black && s.black}`}
       style={{ fontWeight: fontWeight }}
     >
       {text}

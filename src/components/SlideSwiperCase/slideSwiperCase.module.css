@@ -4,67 +4,16 @@
   line-height: 130.909%;
 }
 .wrapper {
-  position: relative;
   padding: 1.625em;
   border-radius: 2.8125em;
   background: var(--dark);
   transition: all 0.3s ease-in-out;
-  width: 100%;
-  height: 100%;
-  background-image: none;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  transition: all 0.3s ease-in-out;
-  overflow: hidden;
 }
-.wrapper:hover .image {
-  opacity: 0;
-}
-
-.education::before,
-.planty::before,
-.citf::before,
-.icedate::before {
-  content: "";
-  position: absolute;
-  left: 0;
-  top: 0;
-  display: block;
-  width: 100%;
-  height: 37em;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  transform: translateY(100%);
-  opacity: 0;
-  transition: all 0.3s ease-in-out;
-}
-.education::before {
-  background-image: url(../../images/cases/education2.png);
-}
-.planty::before {
-  background-image: url(../../images/cases/planty2.png);
-}
-.citf::before {
-  background-image: url(../../images/cases/citf2.png);
-}
-.icedate::before {
-  background-image: url(../../images/cases/iceDate2.png);
-}
-.education:hover::before,
-.planty:hover::before,
-.citf:hover::before,
-.icedate:hover::before {
-  transform: translateY(0);
-  opacity: 1;
-}
-
+/* .wrapper:hover {
+  background-color: red;
+} */
 .activeSlide {
   background: var(--main);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
 }
 .list {
   display: flex;
@@ -73,13 +22,11 @@
 }
 .image {
   width: 32.5625em;
-  transition: all 0.2s ease-in-out;
 }
 .block {
   text-align: center;
 }
 .button {
-  position: relative;
   margin-left: auto;
   display: flex;
   align-items: center;
@@ -187,14 +134,5 @@
   .btnNext,
   .btnPrev {
     font-size: 1.704em;
-  }
-  .item {
-    font-size: 0.9em;
-  }
-  .education::before,
-  .planty::before,
-  .citf::before,
-  .icedate::before {
-    height: 27.4em;
   }
 }

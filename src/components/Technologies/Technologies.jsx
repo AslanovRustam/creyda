@@ -1,9 +1,9 @@
-import InfoContainer from "../InfoContainer/InfoContainer";
+import { useState } from "react";
 import { technologies } from "../../data/data";
+import InfoContainer from "../InfoContainer/InfoContainer";
 import SliderTech from "../Slider/SliderTech";
 import useScreenOrientationPortrait from "../../helpers/orientation";
 import s from "./technologies.module.css";
-import { useState } from "react";
 
 export default function Technologies() {
   const [portrait, setPortrait] = useState(useScreenOrientationPortrait());
@@ -17,7 +17,7 @@ export default function Technologies() {
         ) : (
           technologies.map(({ name, image, width }) => (
             <li className={s.item} key={name}>
-              <img className={s.image} src={image} alt={name} />
+              <img className={s.image} src={image} alt={name} loading="lazy" />
               <svg
                 className={`${s.dots} ${!width && s.smallItem}`}
                 viewBox="0 0 480 59"

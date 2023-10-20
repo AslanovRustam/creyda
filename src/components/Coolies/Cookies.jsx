@@ -2,13 +2,16 @@ import { useEffect, useState } from "react";
 import useScreenOrientationPortrait from "../../helpers/orientation";
 import cookie from "../../images/cookie.png";
 import s from "./cookies.module.css";
+import { useLocalStorage } from "../../helpers/useLocalStorage";
 
 export default function Cookies() {
   const [visible, setVisible] = useState(false);
+  const [cookieCheck, setCookieCheck] = useLocalStorage("cookie", false);
   const screenOrientation = useScreenOrientationPortrait();
-  console.log("screenOrientation", screenOrientation);
+
   const onCookieClick = () => {
     setVisible(false);
+    setCookieCheck(true);
   };
 
   useEffect(() => {
@@ -26,6 +29,9 @@ export default function Cookies() {
   );
 
   if (!visible) {
+    return null;
+  }
+  if (cookieCheck) {
     return null;
   }
   return (

@@ -1,19 +1,11 @@
-// import s from "../components/Services/services.module.css";
-// import uiDes from "../images/services/design.svg";
-// import graphic from "../images/services/graphic.svg";
-// import logo from "../images/services/logo.svg";
-// import motion from "../images/services/motion.svg";
-// import ilustration from "../images/services/illustration.svg";
-// import threeD from "../images/services/3d.svg";
-// import development from "../images/services/development.svg";
-// import { ReactComponent as UiDes } from "../images/services/design.svg";
-// import { ReactComponent as Graphic } from "../images/services/graphic.svg";
-// import { ReactComponent as Logo } from "../images/services/logo.svg";
-// import { ReactComponent as Motion } from "../images/services/motion.svg";
-// import { ReactComponent as Ilustration } from "../images/services/illustration.svg";
-// import { ReactComponent as ThreeD } from "../images/services/3d.svg";
-// import { ReactComponent as Development } from "../images/services/development.svg";
-import fairspin from "../images/fairspin.png";
+import education from "../images/cases/education.png";
+import planty from "../images/cases/planty.png";
+import iceDate from "../images/cases/iceDate.png";
+import citf from "../images/cases/citf.png";
+import educationHover from "../images/cases/education2.png";
+import plantyHover from "../images/cases/planty2.png";
+import iceDateHover from "../images/cases/iceDate2.png";
+import citfHover from "../images/cases/citf2.png";
 import ae from "../images/technologies/AE.png";
 import figma from "../images/technologies/Figma.png";
 import css from "../images/technologies/css.png";
@@ -27,67 +19,11 @@ import html from "../images/technologies/html.png";
 import ai from "../images/technologies/ai.png";
 import procreate from "../images/technologies/procreate.png";
 import behance from "../images/socials/behance.png";
-import group from "../images/socials/Group.png";
 import upwork from "../images/socials/upwork.png";
 import linkedin from "../images/socials/linkedin.png";
-import instagram from "../images/socials/Instagram.png";
 import { ReactComponent as Behance } from "../images/socials/behance.svg";
-import { ReactComponent as Group } from "../images/socials/Group.svg";
 import { ReactComponent as Upwork } from "../images/socials/upwork.svg";
 import { ReactComponent as Linkedin } from "../images/socials/linkedin.svg";
-import { ReactComponent as Instagram } from "../images/socials/Instagram.svg";
-
-// export const services = [
-//   {
-//     id: "ui/ux",
-//     title: "UI/UX Design",
-//     titleMob: "UI/UX Design",
-//     image: <UiDes className={`${s.image} ${s.show}`} />,
-//     picture: uiDes,
-//   },
-//   {
-//     id: "graphic design",
-//     title: "Graphic <br> Design",
-//     titleMob: "Graphic <br> Design",
-//     image: <Graphic className={`${s.image} ${s.show}`} />,
-//     picture: graphic,
-//   },
-//   {
-//     id: "logo & identity",
-//     title: "Logo <br>& Identity",
-//     titleMob: "Logo <br>& Identity",
-//     image: <Logo className={`${s.image} ${s.show}`} />,
-//     picture: logo,
-//   },
-//   {
-//     id: "motion",
-//     title: "Motion<br> Design",
-//     titleMob: "Motion<br> Design",
-//     image: <Motion className={`${s.image} ${s.show}`} />,
-//     picture: motion,
-//   },
-//   {
-//     id: "illustration",
-//     title: "Illustration",
-//     titleMob: "Illustration",
-//     image: <Ilustration className={`${s.image} ${s.show}`} />,
-//     picture: ilustration,
-//   },
-//   {
-//     id: "3d",
-//     title: "3D Design",
-//     titleMob: "3D Design",
-//     image: <ThreeD className={`${s.image} ${s.show}`} />,
-//     picture: threeD,
-//   },
-//   {
-//     id: "development",
-//     title: "Development<br> and<br> programming",
-//     titleMob: "Development and programming",
-//     image: <Development className={`${s.image} ${s.show}`} />,
-//     picture: development,
-//   },
-// ];
 
 export const cases = [
   { id: "all", name: "all" },
@@ -103,31 +39,43 @@ export const cases = [
 export const slidersData = [
   {
     id: 0,
-    title: "Fairspin landings design1",
-    infoContainer: ["Branding", "Design"],
-    name: ["all", "graphic design"],
-    image: fairspin,
+    bgClass: "education",
+    title: "Education - Learning Platform (LMS)",
+    infoContainer: ["ui/ux", "motion"],
+    name: ["all", "graphic design", "motion"],
+    image: education,
+    imgColor: educationHover,
+    url: "https://www.behance.net/gallery/181428829/Education-Learning-Platform-(LMS)",
   },
   {
     id: 1,
-    title: "Fairspin landings design2",
-    infoContainer: ["Development", "Design"],
-    name: ["all", "development"],
-    image: fairspin,
+    bgClass: "planty",
+    title: "Plant care mobile application",
+    infoContainer: ["ui/ux", "motion"],
+    name: ["all", "graphic design", "motion"],
+    image: planty,
+    imgColor: plantyHover,
+    url: "https://www.behance.net/gallery/181434729/PLANTY-Plant-care-mobile-application",
   },
   {
     id: 2,
-    title: "Fairspin landings design3",
-    infoContainer: ["Motion", "Design"],
-    name: ["all", "motion"],
-    image: fairspin,
+    bgClass: "icedate",
+    title: "Ice Dating - Dating Website",
+    infoContainer: ["ui/ux"],
+    name: ["all", "graphic design"],
+    image: iceDate,
+    imgColor: iceDateHover,
+    url: "https://www.behance.net/gallery/181514835/Ice-Dating-Dating-Website",
   },
   {
     id: 3,
-    title: "Fairspin landings design4",
-    infoContainer: ["Logo", "Design"],
-    name: ["all", "logo & identity"],
-    image: fairspin,
+    bgClass: "citf",
+    title: "Cyprus IT Conference Site",
+    infoContainer: ["ui/ux", "motion", "3d", "development"],
+    name: ["all", "graphic design", "motion", "development"],
+    image: citf,
+    imgColor: citfHover,
+    url: "https://www.behance.net/gallery/181686469/CITF-Cyprus-IT-Conference-Site",
   },
 ];
 

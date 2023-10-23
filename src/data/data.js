@@ -6,6 +6,10 @@ import educationHover from "../images/cases/education2.png";
 import plantyHover from "../images/cases/planty2.png";
 import iceDateHover from "../images/cases/iceDate2.png";
 import citfHover from "../images/cases/citf2.png";
+import educationPixeled from "../images/cases/education2_pixeled.png";
+import plantyPixeled from "../images/cases/planty2_pixeled.png";
+import iceDatePixeled from "../images/cases/iceDate2_pixeled.png";
+import citfPixeled from "../images/cases/citf2_pixeled.png";
 import ae from "../images/technologies/AE.png";
 import figma from "../images/technologies/Figma.png";
 import css from "../images/technologies/css.png";
@@ -45,6 +49,7 @@ export const slidersData = [
     name: ["all", "graphic design", "motion"],
     image: education,
     imgColor: educationHover,
+    imgPixeled: educationPixeled,
     url: "https://www.behance.net/gallery/181428829/Education-Learning-Platform-(LMS)",
   },
   {
@@ -55,6 +60,7 @@ export const slidersData = [
     name: ["all", "graphic design", "motion"],
     image: planty,
     imgColor: plantyHover,
+    imgPixeled: plantyPixeled,
     url: "https://www.behance.net/gallery/181434729/PLANTY-Plant-care-mobile-application",
   },
   {
@@ -65,6 +71,7 @@ export const slidersData = [
     name: ["all", "graphic design"],
     image: iceDate,
     imgColor: iceDateHover,
+    imgPixeled: iceDatePixeled,
     url: "https://www.behance.net/gallery/181514835/Ice-Dating-Dating-Website",
   },
   {
@@ -75,6 +82,7 @@ export const slidersData = [
     name: ["all", "graphic design", "motion", "development"],
     image: citf,
     imgColor: citfHover,
+    imgPixeled: citfPixeled,
     url: "https://www.behance.net/gallery/181686469/CITF-Cyprus-IT-Conference-Site",
   },
 ];

@@ -13,7 +13,7 @@ export default function PixelsCursor() {
   };
 
   useEffect(() => {
-    const canvas = document.getElementById("canvas");
+    const canvas = document.getElementById("canvasCursor");
     const ctx = canvas.getContext("2d");
 
     const drawGrid = () => {
@@ -111,5 +111,5 @@ export default function PixelsCursor() {
     canvas.addEventListener("touchmove", touchMove);
   }, []);
 
-  return <canvas className={s.canvas} id="canvas"></canvas>;
+  return <canvas className={s.canvas} id="canvasCursor"></canvas>;
 }

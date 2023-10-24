@@ -54,9 +54,11 @@ export default function Slider({ data, btnProject, navBtn, slidesPerView }) {
                         </li>
                       ))}
                     </ul>
-
+                    {/* <div className={s.pixeledImage}>
+                      <PixelImage src={imgColor} />
+                    </div> */}
                     <div className={`${s.imagePixeled} ${s[bgClass]}`}>
-                      <img className={s.imgPix} src={imgPixeled} alt={title} />
+                      {/* <img className={s.imgPix} src={imgPixeled} alt={title} /> */}
                     </div>
 
                     <p className={s.block}>

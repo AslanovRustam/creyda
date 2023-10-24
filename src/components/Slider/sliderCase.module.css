@@ -22,7 +22,10 @@
 .wrapper:hover .image {
   /* opacity: 0; */
   /* transform: scale(0); */
-  transform: translateY(-200%);
+  /* transform: translateY(-200%); */
+  /* filter: blur(0.5em); */
+  /* position: relative; */
+  /* z-index: -1; */
 }
 
 .education::before,
@@ -36,16 +39,17 @@
   display: block;
   width: 100%;
   height: 100%;
-
+  /* filter: blur(0.5em); */
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   /* transform: translateY(100%); */
   /* transform: scale(0); */
-  opacity: 0;
+  /* opacity: 0; */
   transition: all 1s ease-in-out;
   /* border: 0.5em solid var(--main);
   border-radius: 2.8125em; */
+  /* z-index: 1; */
 }
 .education::before {
   background-image: url(../../images/cases/education2.png);
@@ -65,28 +69,110 @@
 .icedate:hover::before {
   /* transform: translateY(0); */
   /* transform: scale(1); */
-  opacity: 1;
+  /* opacity: 1; */
+  /* filter: blur(0); */
 }
-
+.pixeledImage {
+  opacity: 0;
+  /* transform: translateY(100%); */
+  transition: all 0.5s ease-in-out;
+}
+.wrapper:hover .pixeledImage {
+  opacity: 1;
+  /* transform: translateY(0); */
+}
 .imagePixeled {
   /* display: none; */
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
+  width: 0;
   height: 100%;
-  opacity: 1;
+  /* opacity: 1; */
   /* opacity: 0; */
-  transform: translateY(100%);
+  /* transform: translateY(100%); */
   /* transform: scale(0); */
+
   transition: all 1s ease-in-out;
+  /* clip-path: polygon(
+    0% 0%,
+    96.32% 0%,
+    93.8% 0%,
+    95.01% 6.98%,
+    92.76% 13.69%,
+    93.88% 19.74%,
+    92.05% 24.98%,
+    95.93% 28.3%,
+    93.41% 31.63%,
+    95.01% 35.65%,
+    92.72% 39.31%,
+    96.9% 45.38%,
+    95.56% 45.56%,
+    93.02% 53.7%,
+    95.83% 58.28%,
+    93.02% 61.27%,
+    94.87% 66.5%,
+    92.31% 70.58%,
+    95.97% 73.71%,
+    93.02% 82.56%,
+    97.71% 87.29%,
+    96.16% 94.13%,
+    97.3% 100%,
+    100% 100%,
+    0% 100%
+  ); */
+  clip-path: polygon(
+    evenodd,
+    0% 0%,
+    5.57% 3.9%,
+    11.24% 0.83%,
+    18.04% 5.44%,
+    23.5% 2.76%,
+    30.25% 4.75%,
+    34.6% 2.69%,
+    39.23% 4.02%,
+    45% 1.95%,
+    53.13% 3.9%,
+    63.29% 2.38%,
+    67.12% 5.5%,
+    73.46% 1.95%,
+    79.15% 4.68%,
+    86.47% 2.34%,
+    90.74% 4.66%,
+    94.17% 3.42%,
+    93.8% 0%,
+    94.54% 6.85%,
+    92.76% 13.69%,
+    93.88% 19.74%,
+    92.05% 24.98%,
+    95.93% 28.3%,
+    93.41% 31.63%,
+    95.01% 35.65%,
+    92.72% 39.31%,
+    96.9% 45.38%,
+    95.56% 45.56%,
+    93.02% 53.7%,
+    95.83% 58.28%,
+    93.02% 61.27%,
+    94.87% 66.5%,
+    92.31% 70.58%,
+    95.97% 73.71%,
+    93.02% 82.56%,
+    97.71% 87.29%,
+    96.16% 94.13%,
+    97.3% 100%,
+    100% 100%,
+    0% 100%
+  );
 }
 
 .wrapper:hover .imagePixeled {
   /* display: block; */
-  opacity: 1;
-  transform: translateY(0);
+  /* opacity: 1; */
+  /* transform: translateY(0); */
   /* transform: scale(1); */
+
+  width: 100%;
 }
 
 .imgPix {

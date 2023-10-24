@@ -1,0 +1,55 @@
+.cube {
+  position: relative;
+
+  width: 100%;
+  height: 37em;
+  transform-style: preserve-3d;
+  /* transform: perspective(1000px) rotateY(0deg); */
+  transition: transform 1s;
+}
+
+.rotated {
+  /* transform: perspective(1000px) rotateY(180deg); */
+  transform: rotateY(-90deg);
+}
+
+.cube div {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* font-size: 24px; */
+  background: var(--main);
+  border: 0.1em solid var(--main);
+  backface-visibility: hidden;
+}
+
+.front {
+  transform: translateZ(100px);
+}
+
+/* .back {
+  transform: rotateY(180deg) translateZ(100px);
+} */
+
+/* .left {
+  transform: rotateY(-90deg) translateZ(100px);
+} */
+
+.right {
+  transform: rotateY(90deg) translateZ(34em);
+}
+
+.top {
+  transform: rotateX(90deg) translateZ(100px);
+}
+
+.bottom {
+  transform: rotateX(-90deg) translateZ(100px);
+}
+.imageCube {
+  width: 100%;
+  height: 100%;
+}

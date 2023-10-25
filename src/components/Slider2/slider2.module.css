@@ -20,15 +20,9 @@
   overflow: hidden;
 }
 .wrapper:hover .image {
-  /* opacity: 0; */
-  /* transform: scale(0); */
-  /* transform: translateY(-200%); */
-  /* filter: blur(0.5em); */
-  /* position: relative; */
-  /* z-index: -1; */
 }
 
-.education::before,
+/* .education::before,
 .planty::before,
 .citf::before,
 .icedate::before {
@@ -39,17 +33,12 @@
   display: block;
   width: 100%;
   height: 100%;
-  /* filter: blur(0.5em); */
+
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  /* transform: translateY(100%); */
-  /* transform: scale(0); */
-  /* opacity: 0; */
+
   transition: all 1s ease-in-out;
-  /* border: 0.5em solid var(--main);
-  border-radius: 2.8125em; */
-  /* z-index: 1; */
 }
 .education::before {
   background-image: url(../../images/cases/education2.png);
@@ -67,50 +56,76 @@
 .planty:hover::before,
 .citf:hover::before,
 .icedate:hover::before {
-  /* transform: translateY(0); */
-  /* transform: scale(1); */
-  /* opacity: 1; */
-  /* filter: blur(0); */
+} */
+.education,
+.planty,
+.citf,
+.icedate {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  /* background-color: red; */
 }
-.pixeledImage {
-  opacity: 0;
-  /* transform: translateY(100%); */
-  transition: all 0.5s ease-in-out;
+.education {
+  background-image: url(../../images/cases/education2.png);
 }
-.wrapper:hover .pixeledImage {
-  opacity: 1;
-  /* transform: translateY(0); */
+.planty {
+  background-image: url(../../images/cases/planty2.png);
 }
+.citf {
+  background-image: url(../../images/cases/citf2.png);
+}
+.icedate {
+  background-image: url(../../images/cases/iceDate2.png);
+}
+
 .imagePixeled {
-  /* display: none; */
   position: absolute;
-  top: 0;
+  top: -0.5em;
   left: 0;
   width: 0;
   width: 100%;
-  height: 100%;
-  /* opacity: 1; */
-  /* opacity: 0; */
-  /* transform: translateY(100%); */
-  /* transform: scale(0); */
-
+  height: 103%;
   transition: all 1s ease-in-out;
 }
-
-.wrapper:hover .imagePixeled {
-  /* display: block; */
-  opacity: 1;
-  /* transform: translateY(0); */
-  /* transform: scale(1); */
-
-  width: 100%;
+.imagePixeled span {
+  position: absolute;
+  inset: 0;
+  transition: all 0.5s ease-in-out;
+  background-size: cover;
+}
+.imagePixeled span:nth-child(1) {
+  clip-path: polygon(0% 0%, 51% 0%, 50% 51%, 0% 51%);
+  transform: translate(-100%, -100%);
+}
+.imagePixeled span:nth-child(2) {
+  clip-path: polygon(50% 0%, 100% 0%, 100% 50%, 50% 50%);
+  transform: translate(100%, -100%);
+}
+.imagePixeled span:nth-child(3) {
+  clip-path: polygon(50% 50%, 0% 50%, 0% 100%, 50% 100%);
+  transform: translate(-100%, 100%);
+}
+.imagePixeled span:nth-child(4) {
+  clip-path: polygon(49% 49%, 100% 49%, 100% 100%, 50% 100%);
+  transform: translate(100%, 100%);
+}
+.imagePixeled:hover span:nth-child(1) {
+  transform: translate(0, 0);
+}
+.imagePixeled:hover span:nth-child(2) {
+  transform: translate(0, 0);
+  transition-delay: 0.2s;
+}
+.imagePixeled:hover span:nth-child(3) {
+  transform: translate(0, 0);
+  transition-delay: 0.4s;
+}
+.imagePixeled:hover span:nth-child(4) {
+  transform: translate(0, 0);
+  transition-delay: 0.62s;
 }
 
-.imgPix {
-  width: 100%;
-  height: 100%;
-  image-rendering: pixelated;
-}
 .activeSlide {
   background: var(--main);
   background-repeat: no-repeat;

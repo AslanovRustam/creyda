@@ -1,12 +1,12 @@
 import { useState } from "react";
 import InfoContainer from "../InfoContainer/InfoContainer";
-import Slider from "../Slider/Slider";
 import Container from "../Container/Container";
 import SliderCaseSelection from "../Slider/SliderCaseSelection";
 import useScreenOrientationPortrait from "../../helpers/orientation";
 import { cases } from "../../data/data";
 import { slidersData } from "../../data/data";
 import s from "./cases.module.css";
+import Slider2 from "../Slider2/Slider2";
 
 export default function Cases() {
   const [active, setActive] = useState("all");
@@ -33,7 +33,7 @@ export default function Cases() {
         </div>
       </Container>
       <div className={s.casesWrapper}>
-        <Slider
+        <Slider2
           data={filteredCases}
           btnProject
           navBtn

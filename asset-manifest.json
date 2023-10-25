@@ -1,35 +1,37 @@
 {
   "files": {
-    "main.css": "/creyda/static/css/main.d21cc054.css",
-    "main.js": "/creyda/static/js/main.7c7bb54a.js",
+    "main.css": "/creyda/static/css/main.06270584.css",
+    "main.js": "/creyda/static/js/main.7d24945f.js",
     "static/media/VelaSans-Medium500.ttf": "/creyda/static/media/VelaSans-Medium500.06a4e46f3b7dd34814f0.ttf",
     "static/media/VelaSans-SemiBold600.ttf": "/creyda/static/media/VelaSans-SemiBold600.489b939c3be96db3682f.ttf",
     "static/media/VelaSans-ExtraBold800.ttf": "/creyda/static/media/VelaSans-ExtraBold800.c594a80787ce45361cbe.ttf",
     "static/media/graphic.svg": "/creyda/static/media/graphic.051bc1a8b092f6f77f4d96d41f3a80e8.svg",
+    "static/media/iceDate2.png": "/creyda/static/media/iceDate2.d2baffeee637cf9ad1d4.png",
+    "static/media/education2.png": "/creyda/static/media/education2.8060a6010a879b8ecc9c.png",
+    "static/media/planty2.png": "/creyda/static/media/planty2.a3e4fccf1d17959e9b19.png",
     "static/media/design.svg": "/creyda/static/media/design.abcea0fe230988e9aaca3eba7456bcaa.svg",
-    "static/media/circle.png": "/creyda/static/media/circle.0f279c6d38e11d555ce0.png",
     "static/media/motion.svg": "/creyda/static/media/motion.15c5ad9eedd097acf8bbed08f69578a0.svg",
     "static/media/stain.svg": "/creyda/static/media/stain.11e567f9c86f8d2968fe5262992fbf06.svg",
+    "static/media/citf2.png": "/creyda/static/media/citf2.c19ea9c477dd26b4be31.png",
     "static/media/development.svg": "/creyda/static/media/development.7ba35c6d36e9399c8986aef1a979b4c8.svg",
     "static/media/3d.svg": "/creyda/static/media/3d.aa64fc5604b762182cbe3bf0bb38dd41.svg",
     "static/media/RedHatDisplay-Medium500.ttf": "/creyda/static/media/RedHatDisplay-Medium500.3f3a8f4b5d0861029630.ttf",
     "static/media/RedHatDisplay-Regular400.ttf": "/creyda/static/media/RedHatDisplay-Regular400.dfe5c1e7502e7ee7e3a2.ttf",
-    "static/media/fairspin.png": "/creyda/static/media/fairspin.dd196c3a21009da742bc.png",
+    "static/media/circle.png": "/creyda/static/media/circle.ebbf7d21a0fc8ed0f373.png",
     "static/media/illustration.svg": "/creyda/static/media/illustration.b601606dff9227dc3e636645cff249b8.svg",
+    "static/media/planty.png": "/creyda/static/media/planty.29846f3254659256066e.png",
     "static/media/behance.svg": "/creyda/static/media/behance.474e466afb6365d077b3a4b824db522f.svg",
     "static/media/logo.svg": "/creyda/static/media/logo.a3fc5df059b314ea42c591d6ffa39909.svg",
-    "static/media/Instagram.svg": "/creyda/static/media/Instagram.9d81565db4f9f1768eb8c6f16504f121.svg",
-    "static/media/Group.svg": "/creyda/static/media/Group.c67bb690ac50706abe8930ca61ab1c70.svg",
-    "static/media/linkedin.svg": "/creyda/static/media/linkedin.f07de3baaef9da8403cc21b2146979f2.svg",
     "static/media/upwork.svg": "/creyda/static/media/upwork.7f8c13f7d89b36962b9b61c131b7e143.svg",
     "index.html": "/creyda/index.html",
+    "static/media/linkedin.svg": "/creyda/static/media/linkedin.ce2ce4e4fd756c4bc81ed28e18ee550e.svg",
     "static/media/arrow.svg": "/creyda/static/media/arrow.5dca4350678d7b834e213f70670a4319.svg",
     "static/media/dot.svg": "/creyda/static/media/dot.bc9bf8764b65d7dbb728d0d4ef5f1db1.svg",
-    "main.d21cc054.css.map": "/creyda/static/css/main.d21cc054.css.map",
-    "main.7c7bb54a.js.map": "/creyda/static/js/main.7c7bb54a.js.map"
+    "main.06270584.css.map": "/creyda/static/css/main.06270584.css.map",
+    "main.7d24945f.js.map": "/creyda/static/js/main.7d24945f.js.map"
   },
   "entrypoints": [
-    "static/css/main.d21cc054.css",
-    "static/js/main.7c7bb54a.js"
+    "static/css/main.06270584.css",
+    "static/js/main.7d24945f.js"
   ]
 }

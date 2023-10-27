@@ -6,10 +6,10 @@ import "swiper/css/navigation";
 import "swiper/css/scrollbar";
 import InfoContainer from "../InfoContainer/InfoContainer";
 import { ReactComponent as Arrow } from "../../images/arrow.svg";
-import s from "./slider2.module.css";
+import s from "./slider3.module.css";
 import NavBtn from "../Slider/NavBtn";
 
-export default function Slider2({ data, btnProject, navBtn, slidesPerView }) {
+export default function Slider3({ data, btnProject, navBtn, slidesPerView }) {
   const [swiperActiveIndex, setSwiperActiveIndex] = useState(0);
 
   return (
@@ -34,6 +34,18 @@ export default function Slider2({ data, btnProject, navBtn, slidesPerView }) {
                       className={s.wrapperFront}
                       style={{ backgroundImage: `url(${image})` }}
                     >
+                      <span
+                        style={{ backgroundImage: `url(${imgColor})` }}
+                      ></span>
+                      <span
+                        style={{ backgroundImage: `url(${imgColor})` }}
+                      ></span>
+                      <span
+                        style={{ backgroundImage: `url(${imgColor})` }}
+                      ></span>
+                      <span
+                        style={{ backgroundImage: `url(${imgColor})` }}
+                      ></span>
                       <ul className={s.list}>
                         {infoContainer.map((item) => (
                           <li className={s.item} key={item}>

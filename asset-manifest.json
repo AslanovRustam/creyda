@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/creyda/static/css/main.06270584.css",
-    "main.js": "/creyda/static/js/main.7d24945f.js",
+    "main.css": "/creyda/static/css/main.7bdafba7.css",
+    "main.js": "/creyda/static/js/main.5a9a10a3.js",
     "static/media/VelaSans-Medium500.ttf": "/creyda/static/media/VelaSans-Medium500.06a4e46f3b7dd34814f0.ttf",
     "static/media/VelaSans-SemiBold600.ttf": "/creyda/static/media/VelaSans-SemiBold600.489b939c3be96db3682f.ttf",
     "static/media/VelaSans-ExtraBold800.ttf": "/creyda/static/media/VelaSans-ExtraBold800.c594a80787ce45361cbe.ttf",
@@ -27,11 +27,11 @@
     "static/media/linkedin.svg": "/creyda/static/media/linkedin.ce2ce4e4fd756c4bc81ed28e18ee550e.svg",
     "static/media/arrow.svg": "/creyda/static/media/arrow.5dca4350678d7b834e213f70670a4319.svg",
     "static/media/dot.svg": "/creyda/static/media/dot.bc9bf8764b65d7dbb728d0d4ef5f1db1.svg",
-    "main.06270584.css.map": "/creyda/static/css/main.06270584.css.map",
-    "main.7d24945f.js.map": "/creyda/static/js/main.7d24945f.js.map"
+    "main.7bdafba7.css.map": "/creyda/static/css/main.7bdafba7.css.map",
+    "main.5a9a10a3.js.map": "/creyda/static/js/main.5a9a10a3.js.map"
   },
   "entrypoints": [
-    "static/css/main.06270584.css",
-    "static/js/main.7d24945f.js"
+    "static/css/main.7bdafba7.css",
+    "static/js/main.5a9a10a3.js"
   ]
 }

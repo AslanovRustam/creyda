@@ -30,9 +30,9 @@ export default function Modal({ onClose, showModal }) {
           <li className={s.item}>
             <a href="#technologies">Technologies we use</a>
           </li>
-          {/* <li className={s.item}>
-            <a href="#write">write to us</a>
-          </li> */}
+          <li className={s.item}>
+            <a href="#team">Our team</a>
+          </li>
         </ul>
         {/* <div className={s.lang}>EN</div> */}
         <div className={s.socialsContainer}>

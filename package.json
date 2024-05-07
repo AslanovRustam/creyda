@@ -2,7 +2,7 @@
   "name": "creyda",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://AslanovRustam.github.io/creyda",
+  "homepage": "./",
   "dependencies": {
     "formik": "^2.4.5",
     "gh-pages": "^6.0.0",

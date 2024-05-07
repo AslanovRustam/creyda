@@ -16,11 +16,10 @@
   height: 30em;
   border-radius: 2.8125em;
   border: 0.044em solid var(--dark);
-  background: var(--white);
-  backdrop-filter: blur(0.111em);
+  /* background: var(--white); */
+  backdrop-filter: blur(0.5em);
   overflow: hidden;
-  /* cursor: pointer; */
-  transition: all 0.3s ease-in-out;
+  transition: background, color 0.3s ease-in-out;
 }
 /* .item:first-child {
   grid-area: 1 / 1 / 2 / 3;

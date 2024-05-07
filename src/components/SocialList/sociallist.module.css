@@ -1,6 +1,7 @@
 .socialList {
   display: flex;
   margin-top: 0.5em;
+  justify-content: flex-end;
 }
 .socialsItem {
   position: relative;

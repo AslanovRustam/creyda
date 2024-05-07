@@ -754,11 +754,11 @@ export default function Footer() {
             </a>
             <p className={s.subTitle}>Made in Ukraine</p>
             <ul className={s.linkList}>
-              <li className={s.link}>
+              {/* <li className={s.link}>
                 <a href="tel:+38 055 055 55 55">+38 055 055 55 55</a>
-              </li>
+              </li> */}
               <li className={s.link}>
-                <a href="mailto:hello@kreyda.com">hello@kreyda.com</a>
+                <a href="mailto:hello@kreyda.agency">hello@kreyda.agency</a>
               </li>
             </ul>
           </div>
@@ -768,6 +768,9 @@ export default function Footer() {
             </li>
             <li className={s.item}>
               <a href="#cases">Best cases</a>
+            </li>
+            <li className={s.item}>
+              <a href="#team">Our team</a>
             </li>
             <li className={s.item}>
               <div className={s.socialsContainer}>
@@ -788,7 +791,7 @@ export default function Footer() {
           <li className={s.second}> {pixelLine}</li>
           <li className={s.third}> {pixelLine}</li>
         </ul>
-        <p className={s.creds}>© 2023 Kreyda</p>
+        <p className={s.creds}>© 2024 Kreyda</p>
       </Container>
     </footer>
   );

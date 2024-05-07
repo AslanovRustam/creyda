@@ -1,0 +1,72 @@
+.container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin: 3.375em 0;
+}
+.list {
+  display: flex;
+  align-items: center;
+  gap: 1.6em;
+  margin: 3.4375em 0;
+}
+.item {
+  width: 21.25em;
+}
+.photo {
+  /* width: 21.25em; */
+  width: 100%;
+}
+.name,
+.job {
+  color: var(--dark, #1f1f1f);
+  text-align: center;
+  font-size: 1.75em;
+  font-weight: 700;
+}
+.name {
+  margin-top: 1.07em;
+}
+.job {
+  font-size: 0.875em;
+  font-weight: 400;
+  display: block;
+  margin-top: 0.714em;
+}
+.stain {
+  display: none;
+  position: absolute;
+  width: 37.78em;
+  left: -8em;
+  top: 7em;
+  z-index: -1;
+}
+@media (orientation: portrait) {
+  .list {
+    flex-wrap: wrap;
+  }
+  .item {
+    width: 19.88em;
+  }
+  .item:first-child {
+    margin-bottom: 2em;
+  }
+  .item:nth-child(2) {
+    margin-bottom: 2em;
+  }
+  /* .photo{
+    width: 19.88em;
+  } */
+  .name {
+    font-size: 1.988em;
+    padding: 0 1em;
+  }
+
+  .job {
+    font-size: 1.988em;
+    margin-top: 0.285em;
+  }
+  .stain {
+    display: block;
+  }
+}

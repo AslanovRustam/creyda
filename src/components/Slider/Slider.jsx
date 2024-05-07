@@ -8,7 +8,6 @@ import InfoContainer from "../InfoContainer/InfoContainer";
 import NavBtn from "./NavBtn";
 import { ReactComponent as Arrow } from "../../images/arrow.svg";
 import s from "./sliderCase.module.css";
-import PixelImage from "../PixelImage/PixelImage";
 
 export default function Slider({ data, btnProject, navBtn, slidesPerView }) {
   const [swiperActiveIndex, setSwiperActiveIndex] = useState(0);
@@ -29,9 +28,8 @@ export default function Slider({ data, btnProject, navBtn, slidesPerView }) {
               infoContainer,
               image,
               url,
-              bgClass,
+
               imgColor,
-              imgPixeled,
             },
             idx
           ) => {
@@ -39,8 +37,10 @@ export default function Slider({ data, btnProject, navBtn, slidesPerView }) {
               <SwiperSlide key={id}>
                 <>
                   <p className={s.title}>{title}</p>
-                  {/* <div className={`${s.wrapper} ${s[bgClass]}`}> */}
-                  <div className={s.wrapper}>
+                  <div
+                    className={s.wrapperFront}
+                    style={{ backgroundImage: `url(${image})` }}
+                  >
                     <ul className={s.list}>
                       {infoContainer.map((item) => (
                         <li className={s.item} key={item}>
@@ -54,24 +54,19 @@ export default function Slider({ data, btnProject, navBtn, slidesPerView }) {
                         </li>
                       ))}
                     </ul>
-                    {/* <div className={s.pixeledImage}>
-                      <PixelImage src={imgColor} />
-                    </div> */}
-                    <div className={`${s.imagePixeled} ${s[bgClass]}`}>
-                      {/* <img className={s.imgPix} src={imgPixeled} alt={title} /> */}
+                    <div
+                      className={s.wrapperBack}
+                      style={{ backgroundImage: `url(${imgColor})` }}
+                    >
+                      {btnProject && (
+                        <a target="_blank" href={url}>
+                          <button type="button" className={s.button}>
+                            <Arrow className={s.arrow} />
+                            <p className={s.btnText}>Watch project</p>
+                          </button>
+                        </a>
+                      )}
                     </div>
-
-                    <p className={s.block}>
-                      <img className={s.image} src={image} alt={title} />
-                    </p>
-                    {btnProject && (
-                      <a target="_blank" href={url}>
-                        <button type="button" className={s.button}>
-                          <Arrow className={s.arrow} />
-                          <p className={s.btnText}>Watch project</p>
-                        </button>
-                      </a>
-                    )}
                   </div>
                 </>
               </SwiperSlide>

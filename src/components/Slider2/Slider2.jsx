@@ -47,15 +47,6 @@ export default function Slider2({ data, btnProject, navBtn, slidesPerView }) {
                           </li>
                         ))}
                       </ul>
-
-                      {/* {btnProject && (
-                        <a target="_blank" href={url}>
-                          <button type="button" className={s.button}>
-                            <Arrow className={s.arrow} />
-                            <p className={s.btnText}>Watch project</p>
-                          </button>
-                        </a>
-                      )} */}
                     </div>
                     <div
                       className={s.wrapperBack}

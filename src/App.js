@@ -7,6 +7,7 @@ import HaveAProject from "./components/HaveAProject/HaveAProject";
 import Header from "./components/Header/Header";
 import Hero from "./components/Hero/Hero";
 import Services from "./components/Services/Services";
+import Team from "./components/Team/Team";
 import Technologies from "./components/Technologies/Technologies";
 
 function App() {
@@ -21,6 +22,7 @@ function App() {
       <Cases />
       <Container>
         <Technologies />
+        <Team />
         <HaveAProject />
         <ContactsFormik />
       </Container>

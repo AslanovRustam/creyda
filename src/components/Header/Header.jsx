@@ -65,6 +65,9 @@ export default function Header() {
           <li className={s.item} data-text="Technologies we use">
             <a href="#technologies">Technologies we use</a>
           </li>
+          <li className={s.item} data-text="Our team">
+            <a href="#team">Our team</a>
+          </li>
           <li className={s.item} data-text="write to us">
             <a href="#write">
               <Button text="make it great" colorBlack size="1.125em" />

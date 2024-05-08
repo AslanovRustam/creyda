@@ -49,7 +49,7 @@ export default function ContactsFormik() {
         return;
       }
 
-      const response = await fetch("https://www.kreyda.agency/action.php", {
+      const response = await fetch("/action.php", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

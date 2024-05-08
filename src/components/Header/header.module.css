@@ -116,6 +116,9 @@
 .list {
   display: flex;
   align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  margin-left: 4em;
 }
 .item {
   position: relative;
@@ -128,13 +131,12 @@
   cursor: pointer;
   transition: all 0.3s ease-in-out;
 }
-.item:not(:last-child) {
+/* .item:not(:last-child) {
   margin-right: 3em;
 }
 .item:last-child {
-  /* margin-left: 8em; */
   margin-left: 5em;
-}
+} */
 .item::before {
   content: attr(data-text);
   position: absolute;
@@ -163,8 +165,32 @@
   font-size: 1.125em;
   line-height: 133.333%;
   text-transform: uppercase;
+  transition: all 0.3s ease-in-out;
 }
-
+.lang:hover,
+.lang:focus {
+  background: var(--main);
+}
+.languageList {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  pointer-events: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.2em;
+  transition: all 0.3s ease-in-out;
+  /* z-index: -1; */
+}
+.showLanguageList {
+  opacity: 1;
+  transform: translateY(3em);
+  pointer-events: initial;
+}
+.hide {
+  display: none;
+}
 @keyframes dotsMove {
   0% {
     transform: translate(0, 0);

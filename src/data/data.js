@@ -28,6 +28,10 @@ import linkedin from "../images/socials/linkedin.png";
 import { ReactComponent as Behance } from "../images/socials/behance.svg";
 import { ReactComponent as Upwork } from "../images/socials/upwork.svg";
 import { ReactComponent as Linkedin } from "../images/socials/linkedin.svg";
+import bereza from "../images/team/Berezovskyi.png";
+import bogdanov from "../images/team/Bogdanov.png";
+import lymarchuk from "../images/team/Lymarchuk.png";
+import diankin from "../images/team/Diankin.png";
 
 export const cases = [
   { id: "all", name: "all" },
@@ -129,4 +133,26 @@ export const socials = [
   { id: 2, name: "upwork", image: upwork, imageSvg: <Upwork /> },
   { id: 3, name: "linkedin", image: linkedin, imageSvg: <Linkedin /> },
   // { id: 4, name: "instagram", image: instagram, imageSvg: <Instagram /> },
+];
+
+export const teamArr = [
+  {
+    id: 1,
+    name: "Berezovskyi Oleksandr",
+    job: "Chief Executive Officer",
+    photo: bereza,
+  },
+  {
+    id: 2,
+    name: "Bogdanov Dmitry",
+    job: "co-founder & co-owner",
+    photo: bogdanov,
+  },
+  {
+    id: 3,
+    name: "Lymarchuk Alexandr",
+    job: "founder & co-owner",
+    photo: lymarchuk,
+  },
+  { id: 4, name: "Diankin Kostantin", job: "сo-owner", photo: diankin },
 ];

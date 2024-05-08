@@ -6,10 +6,13 @@
   "dependencies": {
     "formik": "^2.4.5",
     "gh-pages": "^6.0.0",
+    "i18next": "^23.11.3",
+    "i18next-browser-languagedetector": "^7.2.1",
     "modern-normalize": "^2.0.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-hot-toast": "^2.4.1",
+    "react-i18next": "^14.1.1",
     "react-pixelify": "^0.2.2",
     "react-scripts": "5.0.1",
     "react-transition-group": "^4.4.5",

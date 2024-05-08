@@ -1,0 +1,176 @@
+{
+  "cookies": {
+    "text": "This site uses cookies, do you agree?",
+    "btnOK": "OK",
+    "btnCANCEL": "Cancel"
+  },
+  "header": {
+    "menu": "Menu",
+    "links": {
+      "offer": "What can we offer ?",
+      "cases": "Best cases",
+      "technologies": "Technologies we use",
+      "team": "Our team",
+      "btn": "make it great"
+    },
+    "languageName": { "en": "EN", "ua": "UA" }
+  },
+  "modal": {
+    "links": {
+      "offer": "What can we offer ?",
+      "cases": "Best cases",
+      "technologies": "Technologies we use",
+      "team": "Our team",
+      "socials": "We in socials"
+    }
+  },
+  "hero": {
+    "title": "Smart solutions<br></br> for your business tasks...",
+    "btn": "Write to US"
+  },
+  "services": {
+    "infoContainer": "What can we offer ?",
+    "options": {
+      "design": "UI/UX Design",
+      "graphic": "Graphic <br> Design",
+      "logo": "Logo <br>& Identity",
+      "motion": "Motion<br> Design",
+      "illustration": "Illustration",
+      "3D": "3D Design",
+      "developmentDESCTOP": "Development and programming",
+      "developmentMOB": "Development<br> and<br> programming"
+    }
+  },
+  "cases": {
+    "infoContainer": "Best cases"
+  },
+  "projectBTN": "Watch project",
+  "sliderBTNPrev": "Prev",
+  "sliderBTNNext": "Next",
+  "teamINFOContainer": "our team",
+  "HaveAProject": {
+    "title": "Have a project?",
+    "titleGreen": "Let’s talk!",
+    "btnText": "Write to US"
+  },
+  "contacts": {
+    "toastSUCCESS": {
+      "firstPart": "Thank you",
+      "secondPart": " we will contact you soon"
+    },
+    "toastERROR": "Something went wrong, try again later",
+    "title": "Contact us",
+    "name": {
+      "name": "Enter your name",
+      "placeholder": "NAME"
+    },
+    "phone": {
+      "name": "Enter your phone number",
+      "placeholder": "NUMBER"
+    },
+    "email": {
+      "name": "Enter your email",
+      "placeholder": "EMAIL"
+    },
+    "message": {
+      "name": "Enter your message",
+      "placeholder": "Message"
+    },
+    "btnText": "Send"
+  },
+  "footer": {
+    "made": "Made in Ukraine",
+    "links": {
+      "offer": "What can we offer ?",
+      "cases": "Best cases",
+      "technologies": "Technologies we use",
+      "team": "Our team",
+      "socials": "We in socials:"
+    }
+  },
+  "data": {
+    "cases": {
+      "all": "all",
+      "ui/ux": "ui/ux",
+      "graphic design": "graphic design",
+      "logo & identity": "logo & identity",
+      "motion": "motion",
+      "illustration": "illustration",
+      "3d": "3d",
+      "development": "development"
+    },
+    "slidersData": {
+      "education": {
+        "bgClass": "education",
+        "title": "Education - Learning Platform (LMS)",
+        "infoContainer": {
+          "first": "ui/ux",
+          "second": "motion"
+        },
+        "name": {
+          "first": "all",
+          "second": "graphic design",
+          "third": "motion"
+        }
+      },
+      "planty": {
+        "bgClass": "planty",
+        "title": "Plant care mobile application",
+        "infoContainer": {
+          "first": "ui/ux",
+          "second": "motion"
+        },
+        "name": {
+          "first": "all",
+          "second": "graphic design",
+          "third": "motion"
+        }
+      },
+      "icedate": {
+        "bgClass": "icedate",
+        "title": "Ice Dating - Dating Website",
+        "infoContainer": {
+          "first": "ui/ux"
+        },
+        "name": {
+          "first": "all",
+          "second": "graphic design"
+        }
+      },
+      "citf": {
+        "bgClass": "citf",
+        "title": "Cyprus IT Conference Site",
+        "infoContainer": {
+          "first": "ui/ux",
+          "second": "motion",
+          "third": "3d",
+          "fourth": "development"
+        },
+        "name": {
+          "first": "all",
+          "second": "graphic design",
+          "third": "motion",
+          "fourth": "development"
+        }
+      }
+    },
+    "team": {
+      "berezovskyi": {
+        "name": "Berezovskyi Oleksandr",
+        "job": "Chief Executive Officer"
+      },
+      "bogdanov": {
+        "name": "Bogdanov Dmitry",
+        "job": "co-founder & co-owner"
+      },
+      "lymarchuk": {
+        "name": "Lymarchuk Alexandr",
+        "job": "founder & co-owner"
+      },
+      "diankin": {
+        "name": "Diankin Kostantin",
+        "job": "сo-owner"
+      }
+    }
+  }
+}

@@ -1,3 +1,4 @@
+import { useTranslation, Trans } from "react-i18next";
 import Cases from "./components/Cases/Cases";
 import ContactsFormik from "./components/Contacts/ContactsFormik";
 import Container from "./components/Container/Container";
@@ -11,11 +12,12 @@ import Team from "./components/Team/Team";
 import Technologies from "./components/Technologies/Technologies";
 
 function App() {
+  const { t } = useTranslation();
   return (
     <>
       <Container>
-        <Cookies />
-        <Header />
+        <Cookies t={t} />
+        <Header t={t} />
         <Hero />
         <Services />
       </Container>

@@ -19,7 +19,7 @@ html,
 body {
   box-sizing: border-box;
   font-size: 0.833vw;
-  font-family: Vela Sans;
+  font-family: gilroy;
   font-style: normal;
   font-weight: 500;
   line-height: normal;
@@ -57,6 +57,31 @@ video {
   width: fit-content;
 }
 @font-face {
+  font-family: "gilroy";
+  font-weight: 400;
+  src: local("gilroy"),
+    url(./fonts/gilroy/Gilroy-Regular-400.ttf) format("opentype");
+}
+@font-face {
+  font-family: "gilroy";
+  font-weight: 500;
+  src: local("gilroy"),
+    url(./fonts/gilroy/Gilroy-Medium-500.ttf) format("opentype");
+}
+@font-face {
+  font-family: "gilroy";
+  font-weight: 600;
+  src: local("gilroy"),
+    url(./fonts/gilroy/Gilroy-SemiBold-600.ttf) format("opentype");
+}
+@font-face {
+  font-family: "gilroy";
+  font-weight: 800;
+  src: local("gilroy"),
+    url(./fonts/gilroy/Gilroy-ExtraBold-800.ttf) format("opentype");
+}
+
+/* @font-face {
   font-family: "Vela Sans";
   font-weight: 500;
   src: local("Vela Sans"),
@@ -85,7 +110,7 @@ video {
   font-weight: 500;
   src: local("RedHat"),
     url(./fonts/redHatDisplay/RedHatDisplay-Medium500.ttf) format("opentype");
-}
+} */
 @media (orientation: portrait) {
   html,
   body {

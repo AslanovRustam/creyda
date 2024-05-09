@@ -27,7 +27,7 @@
 }
 .title {
   color: var(--dark);
-  font-family: RedHat;
+  /* font-family: RedHat; */
   font-size: 2em;
 }
 .buttons {
@@ -36,7 +36,7 @@
 .btnOK,
 .btnCancel {
   text-align: center;
-  font-family: RedHat;
+  /* font-family: RedHat; */
   font-size: 1.125em;
   line-height: 133.333%;
   text-transform: uppercase;

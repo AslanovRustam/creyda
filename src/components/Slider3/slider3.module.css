@@ -86,7 +86,7 @@
 
 .btnText {
   color: var(--main);
-  font-family: RedHat;
+  /* font-family: RedHat; */
   line-height: 133.333%;
   text-transform: uppercase;
 }

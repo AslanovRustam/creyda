@@ -32,7 +32,7 @@
   border-radius: 3.125em;
   border: none;
   background: var(--main);
-  font-family: RedHat;
+  /* font-family: RedHat; */
   font-size: 2em;
   font-weight: 600;
   line-height: 125%;

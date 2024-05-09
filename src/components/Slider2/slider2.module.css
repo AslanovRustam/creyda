@@ -1,7 +1,7 @@
 .title {
   margin-bottom: 0.82em;
   font-size: 3.4375em;
-  line-height: 130.909%;
+  line-height: 130%;
 }
 
 .activeSlide {
@@ -56,12 +56,16 @@
   transition: all 0.3s ease-in-out;
 }
 .container {
-  perspective: 100em;
+  /* perspective: 100em; */
 }
 .wrapperCards {
   position: relative;
-  width: 100%;
-  height: 36em;
+  /* width: 100%;
+  height: 36em; */
+  /* width: 960px;
+  height: 600px; */
+  width: 60em;
+  height: 37.5em;
   transition: all 0.3s ease-in-out;
   transform-style: preserve-3d;
 }
@@ -113,7 +117,8 @@
   }
   .button {
     font-size: 1.704em;
-    margin: auto;
+    bottom: -11em;
+    /* margin: auto; */
   }
   .block {
     margin-bottom: 1.704em;
@@ -136,5 +141,12 @@
   .citf::before,
   .icedate::before {
     height: 27.4em;
+  }
+  .wrapperCards {
+    width: 41.19em;
+    height: 25.82em;
+  }
+  .title {
+    font-size: 3.8375em;
   }
 }

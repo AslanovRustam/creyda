@@ -8,7 +8,7 @@ import { slidersData } from "../../data/data";
 import s from "./cases.module.css";
 import Slider2 from "../Slider2/Slider2";
 
-export default function Cases() {
+export default function Cases({ t }) {
   const [active, setActive] = useState("all");
   const screenOrientation = useScreenOrientationPortrait();
 
@@ -21,7 +21,7 @@ export default function Cases() {
       <Container>
         <div className={s.navigation}>
           <div className={s.casesTitle}>
-            <InfoContainer text="Best cases" />
+            <InfoContainer text={t("cases.infoContainer")} />
           </div>
           <ul className={s.list}>
             <SliderCaseSelection
@@ -38,6 +38,7 @@ export default function Cases() {
           btnProject
           navBtn
           slidesPerView={screenOrientation ? "1.05" : "1.5"}
+          t={t}
         />
       </div>
     </section>

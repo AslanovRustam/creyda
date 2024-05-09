@@ -6,7 +6,7 @@ import s from "./sociallist.module.css";
 export default function SocialList({ modal }) {
   return (
     <ul className={s.socialList}>
-      {/* <li className={`${s.socialsItem} ${modal && s.borderModal}`}>
+      <li className={`${s.socialsItem} ${modal && s.borderModal}`}>
         <a target="_blank" href="https://www.behance.net/kreyda">
           <Behance className={`${s.iconSocial} ${modal && s.colorModal}`} />
         </a>
@@ -33,7 +33,7 @@ export default function SocialList({ modal }) {
             />
           </circle>
         </svg>
-      </li> */}
+      </li>
 
       <li className={`${s.socialsItem} ${modal && s.borderModal}`}>
         <a

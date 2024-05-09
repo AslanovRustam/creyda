@@ -740,7 +740,7 @@ const pixelLine = (
   </svg>
 );
 
-export default function Footer() {
+export default function Footer({ t }) {
   return (
     <footer>
       <Container>
@@ -752,7 +752,7 @@ export default function Footer() {
                 <p className={s.title}>Kreyda</p>
               </div>
             </a>
-            <p className={s.subTitle}>Made in Ukraine</p>
+            <p className={s.subTitle}>{t("footer.made")}</p>
             <ul className={s.linkList}>
               {/* <li className={s.link}>
                 <a href="tel:+38 055 055 55 55">+38 055 055 55 55</a>
@@ -764,20 +764,20 @@ export default function Footer() {
           </div>
           <ul className={s.linksContainer}>
             <li className={s.item}>
-              <a href="#offer">What can we offer ?</a>
+              <a href="#offer">{t("footer.links.offer")}</a>
             </li>
             <li className={s.item}>
-              <a href="#cases">Best cases</a>
+              <a href="#cases">{t("footer.links.cases")}</a>
             </li>
             <li className={s.item}>
-              <a href="#team">Our team</a>
+              <a href="#team">{t("footer.links.team")}</a>
             </li>
             <li className={s.item}>
               <div className={s.socialsContainer}>
-                <p className={s.subTitleSocials}>We in socials:</p>
+                <p className={s.subTitleSocials}>{t("footer.links.socials")}</p>
                 <SocialList />
               </div>
-              <a href="#technologies">Technologies we use</a>
+              <a href="#technologies">{t("footer.links.technologies")}</a>
             </li>
           </ul>
           {/* <div className={s.socialsContainer}>

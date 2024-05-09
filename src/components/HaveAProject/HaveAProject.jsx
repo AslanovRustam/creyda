@@ -3,7 +3,7 @@ import PixelsCursor from "../PixelCursor/PixelCursor";
 import Button from "../Button/Button";
 import { ReactComponent as Stain } from "../../images/stain.svg";
 
-export default function HaveAProject() {
+export default function HaveAProject({ t }) {
   const onBtnClick = () => {
     const form = document.getElementById("write");
     form.scrollIntoView({ behavior: "smooth" });
@@ -12,9 +12,13 @@ export default function HaveAProject() {
     <section className={s.container}>
       <Stain className={s.stain} />
       <div className={s.titleContainer}>
-        <p className={s.title}>Have a project?</p>
-        <p className={s.titleGreen}>Let’s talk!</p>
-        <Button text="Write to US" type="button" onBtnClick={onBtnClick} />
+        <p className={s.title}>{t("haveAProject.title")}</p>
+        <p className={s.titleGreen}>{t("haveAProject.titleGreen")}</p>
+        <Button
+          text={t("haveAProject.btnText")}
+          type="button"
+          onBtnClick={onBtnClick}
+        />
       </div>
       <div className={s.imgContainer}>
         <PixelsCursor />

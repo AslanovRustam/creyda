@@ -5,12 +5,12 @@ import SliderTech from "../Slider/SliderTech";
 import useScreenOrientationPortrait from "../../helpers/orientation";
 import s from "./technologies.module.css";
 
-export default function Technologies() {
+export default function Technologies({ t }) {
   const [portrait, setPortrait] = useState(useScreenOrientationPortrait());
 
   return (
     <section className={s.container} id="technologies">
-      <InfoContainer text="Technologies we use" />
+      <InfoContainer text={t("technologies")} />
       <ul className={s.list}>
         {portrait ? (
           <SliderTech data={technologies} />

@@ -1,1 +1,184 @@
-{}
+{
+  "cookies": {
+    "text": "Цей сайт використовує файли cookie, ви згодні?",
+    "btnOK": "OK",
+    "btnCANCEL": "Скасувати"
+  },
+  "header": {
+    "menu": "Меню",
+    "links": {
+      "offer": "Що ми пропонуємо ?",
+      "cases": "Кращі кейси",
+      "technologies": "Технології",
+      "team": "Наша команда",
+      "btn": "зробимо це"
+    },
+    "languageName": { "en": "EN", "ua": "UA" }
+  },
+  "modal": {
+    "links": {
+      "offer": "Що ми пропонуємо ?",
+      "cases": "Кращі кейси",
+      "technologies": "Технології",
+      "team": "Наша команда",
+      "socials": "Ми в соцмережах:"
+    },
+    "languageName": { "en": "EN", "ua": "UA" }
+  },
+  "hero": {
+    "infoContainer": "Привіт! Ми - KREYDA!",
+    "title": "Розумні рішення<br></br> для ваших бізнес-завдань...",
+    "btn": "Напишіть нам"
+  },
+  "services": {
+    "infoContainer": "Що ми пропонуємо ?",
+    "options": {
+      "design": "UI/UX Дизайн",
+      "graphic": "Графічний <br> Дизайн",
+      "logo": "Логотип <br>& Айдентика",
+      "motion": "Motion<br> Дизайн",
+      "illustration": "Ілюстрація",
+      "3D": "3D Дизайн",
+      "developmentDESCTOP": "Розробка та Програмування",
+      "developmentMOB": "Розробка<br> та<br> Програмування"
+    }
+  },
+  "cases": {
+    "infoContainer": "Кращі кейси"
+  },
+  "technologies": "Технології, які ми використовуємо",
+  "projectBTN": "Переглянути проект",
+  "sliderBTNPrev": "Попередній",
+  "sliderBTNNext": "Наступний",
+  "teamINFOContainer": "Наша команда",
+  "haveAProject": {
+    "title": "Є проект?",
+    "titleGreen": "Давай поговоримо!",
+    "btnText": "Напишіть НАМ"
+  },
+  "contacts": {
+    "errors": {
+      "required": "Це поле є обов'язковим",
+      "name": "Введіть коректне ім'я",
+      "email": "Невірна електронна адреса"
+    },
+    "toastSUCCESS": {
+      "firstPart": "Дякую",
+      "secondPart": " ми скоро з вами зв'яжемося"
+    },
+    "toastERROR": "Щось пішло не так, спробуйте пізніше",
+    "title": "Зв'язатися з нами",
+    "name": {
+      "name": "Введіть ваше ім'я",
+      "placeholder": "ІМ'Я"
+    },
+    "phone": {
+      "name": "Введіть ваш номер телефон",
+      "placeholder": "ТЕЛЕФОН"
+    },
+    "email": {
+      "name": "Введіть вашу електронну пошту",
+      "placeholder": "ПОШТА"
+    },
+    "message": {
+      "name": "Введіть ваше повідомлення",
+      "placeholder": "Повідомлення"
+    },
+    "btnText": "Відправити"
+  },
+  "footer": {
+    "made": "Зроблено в Україні",
+    "links": {
+      "offer": "Що ми пропонуємо ?",
+      "cases": "Кращі кейси",
+      "technologies": "Технології",
+      "team": "Наша команда",
+      "socials": "Ми в соцмережах:"
+    }
+  },
+  "data": {
+    "cases": {
+      "all": "всі",
+      "ui/ux": "ui/ux",
+      "graphic design": "графічний дизайн",
+      "logo & identity": "логотип & айдентика",
+      "motion": "motion",
+      "illustration": "Ілюстрація",
+      "3d": "3d",
+      "development": "розробка"
+    },
+    "slidersData": {
+      "education": {
+        "bgClass": "education",
+        "title": "Освіта-Навчальна платформа(LMS)",
+        "infoContainer": {
+          "first": "ui/ux",
+          "second": "motion"
+        },
+        "name": {
+          "first": "all",
+          "second": "graphic design",
+          "third": "motion"
+        }
+      },
+      "planty": {
+        "bgClass": "planty",
+        "title": "Додаток для догляду за рослинами",
+        "infoContainer": {
+          "first": "ui/ux",
+          "second": "motion"
+        },
+        "name": {
+          "first": "all",
+          "second": "graphic design",
+          "third": "motion"
+        }
+      },
+      "icedate": {
+        "bgClass": "icedate",
+        "title": "Ice Dating - сайт знайомств",
+        "infoContainer": {
+          "first": "ui/ux"
+        },
+        "name": {
+          "first": "all",
+          "second": "graphic design"
+        }
+      },
+      "citf": {
+        "bgClass": "citf",
+        "title": "Сайт ІТ-конференції на Кіпрі",
+        "infoContainer": {
+          "first": "ui/ux",
+          "second": "motion",
+          "third": "3d",
+          "fourth": "розробка"
+        },
+        "name": {
+          "first": "all",
+          "second": "graphic design",
+          "third": "motion",
+          "fourth": "development"
+        }
+      }
+    },
+    "team": {
+      "berezovskyi": {
+        "name": "Березовський Олександр",
+        "job": "Виконавчий Директор"
+      },
+      "bogdanov": {
+        "name": "Богданов Дмитро",
+        "job": "Керуючий партнер"
+      },
+      "lymarchuk": {
+        "name": "Лимарчук Олександр",
+        "job": "Засновник & Співвласник"
+      },
+      "diankin": {
+        "name": "Діанкін Костянтин",
+        "job": "Співвласник"
+      }
+    }
+  }
+}

@@ -6,8 +6,13 @@ import "swiper/css/pagination";
 import "swiper/css/scrollbar";
 import InfoContainer from "../InfoContainer/InfoContainer";
 import s from "./sliderCase.module.css";
+import { useTranslation } from "react-i18next";
 
 export default function SliderCaseSelection({ data, setActive, active }) {
+  const { t } = useTranslation();
+  const translateText = (key) => {
+    return t(key);
+  };
   return (
     <>
       <Swiper
@@ -18,6 +23,7 @@ export default function SliderCaseSelection({ data, setActive, active }) {
         onSwiper={(swiper) => null}
       >
         {data.map((item) => {
+          const translatedName = translateText(item.name.props.i18nKey);
           return (
             <SwiperSlide key={item.id}>
               <li
@@ -26,7 +32,7 @@ export default function SliderCaseSelection({ data, setActive, active }) {
                 onClick={() => setActive(item.id)}
               >
                 <InfoContainer
-                  text={item.name}
+                  text={translatedName}
                   activeCase={active === item.id}
                   fontSize
                 />

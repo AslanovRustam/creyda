@@ -11,20 +11,24 @@ import { ReactComponent as ThreeD } from "../../images/services/3d.svg";
 import { ReactComponent as Development } from "../../images/services/development.svg";
 import ScrollAnimation from "../ScrollAnimation/ScrollAnimation";
 
-export default function Services() {
+export default function Services({ t, Trans }) {
   const screenOrientation = useScreenOrientationPortrait();
-
+  const devDesctop = t("services.options.developmentDESCTOP");
+  const devMob = <Trans i18nKey="services.options.developmentMOB" />;
+  const development = screenOrientation ? devDesctop : devMob;
+  // console.log(devDesctop);
+  // console.log(devMob);
   return (
     <section className={s.container}>
       <div className={s.wrapper} id="offer">
-        <InfoContainer text="What can we offer ?" fontWeight="500" />
+        <InfoContainer text={t("services.infoContainer")} fontWeight="500" />
       </div>
       <ul className={s.list}>
         <ScrollAnimation x={-100} y={0}>
           <li className={s.item}>
             <p
               className={s.title}
-              dangerouslySetInnerHTML={{ __html: "UI/UX Design" }}
+              dangerouslySetInnerHTML={{ __html: t("services.options.design") }}
             ></p>
             <UiDes className={`${s.image} ${s.show}`} />
           </li>
@@ -33,7 +37,9 @@ export default function Services() {
           <li className={s.item}>
             <p
               className={s.title}
-              dangerouslySetInnerHTML={{ __html: "Graphic <br> Design" }}
+              dangerouslySetInnerHTML={{
+                __html: t("services.options.graphic"),
+              }}
             ></p>
             <Graphic className={`${s.image} ${s.show}`} />
           </li>
@@ -42,7 +48,9 @@ export default function Services() {
           <li className={s.item}>
             <p
               className={s.title}
-              dangerouslySetInnerHTML={{ __html: "Logo <br>& Identity" }}
+              dangerouslySetInnerHTML={{
+                __html: t("services.options.logo"),
+              }}
             ></p>
             <Logo className={`${s.image} ${s.show}`} />
           </li>
@@ -51,7 +59,7 @@ export default function Services() {
           <li className={s.item}>
             <p
               className={s.title}
-              dangerouslySetInnerHTML={{ __html: "Motion<br> Design" }}
+              dangerouslySetInnerHTML={{ __html: t("services.options.motion") }}
             ></p>
             <Motion className={`${s.image} ${s.show}`} />
           </li>
@@ -60,7 +68,9 @@ export default function Services() {
           <li className={s.item}>
             <p
               className={s.title}
-              dangerouslySetInnerHTML={{ __html: "Illustration" }}
+              dangerouslySetInnerHTML={{
+                __html: t("services.options.illustration"),
+              }}
             ></p>
             <Ilustration className={`${s.image} ${s.show}`} />
           </li>
@@ -69,7 +79,7 @@ export default function Services() {
           <li className={s.item}>
             <p
               className={s.title}
-              dangerouslySetInnerHTML={{ __html: "3D Design" }}
+              dangerouslySetInnerHTML={{ __html: t("services.options.3D") }}
             ></p>
             <ThreeD className={`${s.image} ${s.show}`} />
           </li>
@@ -78,12 +88,12 @@ export default function Services() {
           <li className={s.item}>
             <p
               className={s.title}
-              dangerouslySetInnerHTML={{
-                __html: screenOrientation
-                  ? "Development and programming"
-                  : "Development<br> and<br> programming",
-              }}
-            ></p>
+              // dangerouslySetInnerHTML={{
+              //   __html: screenOrientation ? devDesctop : devMob,
+              // }}
+            >
+              {development}
+            </p>
             <Development className={`${s.image} ${s.show}`} />
           </li>
         </ScrollAnimation>

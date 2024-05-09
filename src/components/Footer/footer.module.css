@@ -85,6 +85,9 @@ footer {
 .item:focus::after {
   /* width: 100%; */
 }
+.item:last-child {
+  text-align: right;
+}
 .item a {
   color: inherit;
 }
@@ -187,6 +190,9 @@ footer {
   }
   .item:not(:last-child) {
     margin-bottom: 1em;
+  }
+  .item:last-child {
+    text-align: unset;
   }
   .socialsContainer {
     display: flex;

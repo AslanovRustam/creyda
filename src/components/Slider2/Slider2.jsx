@@ -6,18 +6,28 @@ import "swiper/css/navigation";
 import "swiper/css/scrollbar";
 import InfoContainer from "../InfoContainer/InfoContainer";
 import { ReactComponent as Arrow } from "../../images/arrow.svg";
-import s from "./slider2.module.css";
 import NavBtn from "../Slider/NavBtn";
+import s from "./slider2.module.css";
 
-export default function Slider2({ data, btnProject, navBtn, slidesPerView }) {
+export default function Slider2({
+  data,
+  btnProject,
+  navBtn,
+  slidesPerView,
+  t,
+}) {
   const [swiperActiveIndex, setSwiperActiveIndex] = useState(0);
+
+  const translateText = (key) => {
+    return t(key);
+  };
 
   return (
     <>
       <Swiper
         modules={[Navigation, Scrollbar, A11y]}
         spaceBetween={0}
-        slidesPerView={slidesPerView}
+        slidesPerView={"auto"}
         onSlideChange={(swiper) => setSwiperActiveIndex(swiper.activeIndex)}
       >
         {data.map(
@@ -25,10 +35,11 @@ export default function Slider2({ data, btnProject, navBtn, slidesPerView }) {
             { id, title, infoContainer, image, url, bgClass, imgColor },
             idx
           ) => {
+            const translatedName = translateText(title.props.i18nKey);
             return (
               <SwiperSlide key={id}>
                 <div className={s.container}>
-                  <p className={s.title}>{title}</p>
+                  <p className={s.title}>{translatedName}</p>
                   <div className={s.wrapperCards}>
                     <div
                       className={s.wrapperFront}
@@ -56,7 +67,7 @@ export default function Slider2({ data, btnProject, navBtn, slidesPerView }) {
                         <a target="_blank" href={url}>
                           <button type="button" className={s.button}>
                             <Arrow className={s.arrow} />
-                            <p className={s.btnText}>Watch project</p>
+                            <p className={s.btnText}>{t("projectBTN")}</p>
                           </button>
                         </a>
                       )}
@@ -67,7 +78,7 @@ export default function Slider2({ data, btnProject, navBtn, slidesPerView }) {
             );
           }
         )}
-        {navBtn && <NavBtn />}
+        {navBtn && <NavBtn t={t} />}
       </Swiper>
     </>
   );

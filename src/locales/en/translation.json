@@ -21,10 +21,12 @@
       "cases": "Best cases",
       "technologies": "Technologies we use",
       "team": "Our team",
-      "socials": "We in socials"
-    }
+      "socials": "We in socials:"
+    },
+    "languageName": { "en": "EN", "ua": "UA" }
   },
   "hero": {
+    "infoContainer": "Hello! We are KREYDA!",
     "title": "Smart solutions<br></br> for your business tasks...",
     "btn": "Write to US"
   },
@@ -44,16 +46,22 @@
   "cases": {
     "infoContainer": "Best cases"
   },
+  "technologies": "Technologies we use",
   "projectBTN": "Watch project",
   "sliderBTNPrev": "Prev",
   "sliderBTNNext": "Next",
   "teamINFOContainer": "our team",
-  "HaveAProject": {
+  "haveAProject": {
     "title": "Have a project?",
     "titleGreen": "Let’s talk!",
     "btnText": "Write to US"
   },
   "contacts": {
+    "errors": {
+      "required": "This field is required",
+      "name": "Enter a valid name",
+      "email": "Invalid email address"
+    },
     "toastSUCCESS": {
       "firstPart": "Thank you",
       "secondPart": " we will contact you soon"
@@ -161,11 +169,11 @@
       },
       "bogdanov": {
         "name": "Bogdanov Dmitry",
-        "job": "co-founder & co-owner"
+        "job": "Managing partner"
       },
       "lymarchuk": {
         "name": "Lymarchuk Alexandr",
-        "job": "founder & co-owner"
+        "job": "Founder & Co-owner"
       },
       "diankin": {
         "name": "Diankin Kostantin",

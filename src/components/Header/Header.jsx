@@ -4,13 +4,16 @@ import Modal from "../Modal/Modal";
 import { ReactComponent as Dot } from "../../images/dot.svg";
 import logo from "../../images/circle.png";
 import Button from "../Button/Button";
-import s from "./header.module.css";
 import { useTranslation } from "react-i18next";
+import s from "./header.module.css";
 
 export default function Header({ t }) {
   const [showModal, setShowmodal] = useState(false);
   const [showLanguageList, setShowLanguageList] = useState(false);
-  const [language, setLanguage] = useState("en");
+  const [language, setLanguage] = useState(
+    localStorage.getItem("i18nextLng") === "ua" ? "ua" : "en"
+  );
+  // const [language, setLanguage] = useState("en");
   const { i18n } = useTranslation();
 
   const togleModal = () => {
@@ -123,7 +126,7 @@ export default function Header({ t }) {
 
         {/* <div className={s.lang}>EN</div> */}
       </header>
-      <Modal onClose={togleModal} showModal={showModal} />
+      <Modal onClose={togleModal} showModal={showModal} t={t} />
     </>
   );
 }

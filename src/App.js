@@ -18,17 +18,17 @@ function App() {
       <Container>
         <Cookies t={t} />
         <Header t={t} />
-        <Hero />
-        <Services />
+        <Hero t={t} Trans={Trans} />
+        <Services t={t} Trans={Trans} />
       </Container>
-      <Cases />
+      <Cases t={t} />
       <Container>
-        <Technologies />
-        <Team />
-        <HaveAProject />
-        <ContactsFormik />
+        <Technologies t={t} />
+        <Team t={t} />
+        <HaveAProject t={t} />
+        <ContactsFormik t={t} />
       </Container>
-      <Footer />
+      <Footer t={t} />
     </>
   );
 }

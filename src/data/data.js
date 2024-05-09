@@ -1,3 +1,4 @@
+import { Trans } from "react-i18next";
 import education from "../images/cases/education.png";
 import planty from "../images/cases/planty.png";
 import iceDate from "../images/cases/iceDate.png";
@@ -34,21 +35,45 @@ import lymarchuk from "../images/team/Lymarchuk.png";
 import diankin from "../images/team/Diankin.png";
 
 export const cases = [
-  { id: "all", name: "all" },
-  { id: "ui/ux", name: "ui/ux" },
-  { id: "graphic design", name: "graphic design" },
-  { id: "logo & identity", name: "logo & identity" },
-  { id: "motion", name: "motion" },
-  { id: "illustration", name: "illustration" },
-  { id: "3d", name: "3d" },
-  { id: "development", name: "development" },
+  {
+    id: "all",
+    name: <Trans i18nKey="data.cases.all" />,
+  },
+  {
+    id: "ui/ux",
+    name: <Trans i18nKey="data.cases.ui/ux" />,
+  },
+  {
+    id: "graphic design",
+    name: <Trans i18nKey="data.cases.graphic design" />,
+  },
+  {
+    id: "logo & identity",
+    name: <Trans i18nKey="data.cases.logo & identity" />,
+  },
+  {
+    id: "motion",
+    name: <Trans i18nKey="data.cases.motion" />,
+  },
+  {
+    id: "illustration",
+    name: <Trans i18nKey="data.cases.illustration" />,
+  },
+  {
+    id: "3d",
+    name: <Trans i18nKey="data.cases.3d" />,
+  },
+  {
+    id: "development",
+    name: <Trans i18nKey="data.cases.development" />,
+  },
 ];
 
 export const slidersData = [
   {
     id: 0,
     bgClass: "education",
-    title: "Education - Learning Platform (LMS)",
+    title: <Trans i18nKey="data.slidersData.education.title" />,
     infoContainer: ["ui/ux", "motion"],
     name: ["all", "graphic design", "motion"],
     image: education,
@@ -59,7 +84,7 @@ export const slidersData = [
   {
     id: 1,
     bgClass: "planty",
-    title: "Plant care mobile application",
+    title: <Trans i18nKey="data.slidersData.planty.title" />,
     infoContainer: ["ui/ux", "motion"],
     name: ["all", "graphic design", "motion"],
     image: planty,
@@ -70,7 +95,7 @@ export const slidersData = [
   {
     id: 2,
     bgClass: "icedate",
-    title: "Ice Dating - Dating Website",
+    title: <Trans i18nKey="data.slidersData.icedate.title" />,
     infoContainer: ["ui/ux"],
     name: ["all", "graphic design"],
     image: iceDate,
@@ -81,7 +106,7 @@ export const slidersData = [
   {
     id: 3,
     bgClass: "citf",
-    title: "Cyprus IT Conference Site",
+    title: <Trans i18nKey="data.slidersData.citf.title" />,
     infoContainer: ["ui/ux", "motion", "3d", "development"],
     name: ["all", "graphic design", "motion", "development"],
     image: citf,
@@ -138,21 +163,26 @@ export const socials = [
 export const teamArr = [
   {
     id: 1,
-    name: "Berezovskyi Oleksandr",
-    job: "Chief Executive Officer",
+    name: <Trans i18nKey="data.team.berezovskyi.name" />,
+    job: <Trans i18nKey="data.team.berezovskyi.job" />,
     photo: bereza,
   },
   {
     id: 2,
-    name: "Bogdanov Dmitry",
-    job: "co-founder & co-owner",
+    name: <Trans i18nKey="data.team.bogdanov.name" />,
+    job: <Trans i18nKey="data.team.bogdanov.job" />,
     photo: bogdanov,
   },
   {
     id: 3,
-    name: "Lymarchuk Alexandr",
-    job: "founder & co-owner",
+    name: <Trans i18nKey="data.team.lymarchuk.name" />,
+    job: <Trans i18nKey="data.team.lymarchuk.job" />,
     photo: lymarchuk,
   },
-  { id: 4, name: "Diankin Kostantin", job: "сo-owner", photo: diankin },
+  // {
+  //   id: 4,
+  //   name: <Trans i18nKey="data.team.diankin.name" />,
+  //   job: <Trans i18nKey="data.team.diankin.job" />,
+  //   photo: diankin,
+  // },
 ];

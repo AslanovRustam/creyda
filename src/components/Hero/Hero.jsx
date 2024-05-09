@@ -4,22 +4,22 @@ import circle from "../../images/circle.png";
 import s from "./hero.module.css";
 // import TextWrite from "../../helpers/TextWrite";
 
-export default function Hero() {
-  const text = "Smart solutions <br> for your business tasks...";
+export default function Hero({ t, Trans }) {
+  const text = <Trans i18nKey="hero.title" />;
   const onBtnClick = () => {
     const form = document.getElementById("write");
     form.scrollIntoView({ behavior: "smooth" });
   };
   return (
     <section className={s.container}>
-      <InfoContainer text="Hello! We are KREYDA!" fontWeight="500" />
+      <InfoContainer text={t("hero.infoContainer")} fontWeight="500" />
       <h2 className={s.title}>
-        Smart solutions<br></br> for your business tasks...
+        <Trans i18nKey="hero.title" />
       </h2>
       {/* <TextWrite text={text} /> */}
       <img className={s.circle} src={circle} alt="circle" />
       <Button
-        text="Write to US"
+        text={t("hero.btn")}
         type="button"
         onBtnClick={onBtnClick}
         colorBlack

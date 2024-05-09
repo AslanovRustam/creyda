@@ -157,9 +157,11 @@
   color: inherit;
 }
 .lang {
-  padding: 0.5em;
+  /* padding: 0.5em; */
+  padding: 0.5em 0.61em;
   border: 0.11em solid var(--dark);
-  border-radius: 50%;
+  /* border-radius: 50%; */
+  border-radius: 1.1em;
   text-align: center;
   font-family: RedHat;
   font-size: 1.125em;

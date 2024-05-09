@@ -1,20 +1,25 @@
+import { useState } from "react";
 import { useFormik } from "formik";
-import toast, { Toaster } from "react-hot-toast";
 import Button from "../Button/Button";
+import PopUp from "../PopUp/PopUp";
 import { ReactComponent as Design } from "../../images/services/graphic.svg";
 import s from "./contacts.module.css";
+// import toast, { Toaster } from "react-hot-toast";
 
-export default function ContactsFormik() {
+export default function ContactsFormik({ t }) {
+  const [formSend, setFormSend] = useState(false);
+  const [notification, setNotification] = useState("");
+
   const validate = (values) => {
     const errors = {};
     if (!values.name) {
-      errors.name = "This field is required";
+      errors.name = t("contacts.errors.required");
     } else if (
       !/^[a-zA-Zа-яА-Я]+(([' \-][a-zA-Zа-яА-Я ])?[a-zA-Zа-яА-Я]*)*$/.test(
         values.name
       )
     ) {
-      errors.name = "Enter a valid name";
+      errors.name = t("contacts.errors.name");
     }
 
     // if (!values.number) {
@@ -26,11 +31,11 @@ export default function ContactsFormik() {
     // }
 
     if (!values.email) {
-      errors.email = "This field is required";
+      errors.email = t("contacts.errors.required");
     } else if (
       !/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i.test(values.email)
     ) {
-      errors.email = "Invalid email address";
+      errors.email = t("contacts.errors.email");
     }
     return errors;
   };
@@ -49,24 +54,43 @@ export default function ContactsFormik() {
         return;
       }
 
-      const response = await fetch("/action.php", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({
-          email: values.email,
-          number: values.number,
-          name: values.name,
-          message: values.message,
-        }),
-      });
-
-      if (response.status === 200) {
-        toast.success(`Thank you ${values.name}, we will contact you soon`);
-      } else {
-        toast.error("Something went wrong, try again later");
+      try {
+        const response = await fetch("/action.php", {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({
+            email: values.email,
+            number: values.number,
+            name: values.name,
+            message: values.message,
+          }),
+        });
+        if (response.status === 200) {
+          setNotification(
+            `${t("contacts.toastSUCCESS.firstPart")} ${values.name}, ${t(
+              "contacts.toastSUCCESS.secondPart"
+            )}`
+          );
+          setFormSend(true);
+          return;
+        }
+        setNotification(t("contacts.toastERROR"));
+        setFormSend(true);
+      } catch (error) {
+        console.log(error);
       }
+
+      // if (response.status === 200) {
+      //   toast.success(
+      // `${t("contacts.toastSUCCESS.firstPart")} ${values.name}, ${t(
+      //   "contacts.toastSUCCESS.secondPart"
+      // )}`
+      //   );
+      // } else {
+      //   toast.error(t("contacts.toastERROR"));
+      // }
       resetForm();
     },
   });
@@ -74,9 +98,9 @@ export default function ContactsFormik() {
   return (
     <div className={s.container} id="write">
       <form className={s.form}>
-        <p className={s.title}>Contact us</p>
+        <p className={s.title}>{t("contacts.title")}</p>
         <label className={s.label}>
-          <p className={s.name}>Enter your name</p>
+          <p className={s.name}>{t("contacts.name.name")}</p>
           <input
             className={`${s.input} ${
               formik.touched.name && formik.errors.name && s.errorBorder
@@ -87,14 +111,14 @@ export default function ContactsFormik() {
             onBlur={formik.handleBlur}
             value={formik.values.name}
             type="text"
-            placeholder="NAME"
+            placeholder={t("contacts.name.placeholder")}
           />
           {formik.touched.name && formik.errors.name ? (
             <div className={s.errorMessage}>{formik.errors.name}</div>
           ) : null}
         </label>
         <label className={s.label}>
-          <p className={s.name}>Enter your phone number</p>
+          <p className={s.name}>{t("contacts.phone.name")}</p>
           <input
             className={s.input}
             id="number"
@@ -103,11 +127,11 @@ export default function ContactsFormik() {
             onBlur={formik.handleBlur}
             value={formik.values.number}
             type="tel"
-            placeholder="NUMBER"
+            placeholder={t("contacts.phone.placeholder")}
           />
         </label>
         <label className={s.label}>
-          <p className={s.name}>Enter your email</p>
+          <p className={s.name}>{t("contacts.email.name")}</p>
           <input
             className={`${s.input} ${
               formik.touched.email && formik.errors.email && s.errorBorder
@@ -118,14 +142,14 @@ export default function ContactsFormik() {
             onBlur={formik.handleBlur}
             value={formik.values.email}
             type="email"
-            placeholder="EMAIL"
+            placeholder={t("contacts.email.placeholder")}
           />
           {formik.touched.email && formik.errors.email ? (
             <div className={s.errorMessage}>{formik.errors.email}</div>
           ) : null}
         </label>
         <label className={s.label}>
-          <p className={s.name}>Enter your message</p>
+          <p className={s.name}>{t("contacts.message.name")}</p>
           <input
             className={s.input}
             id="message"
@@ -134,7 +158,7 @@ export default function ContactsFormik() {
             onBlur={formik.handleBlur}
             value={formik.values.message}
             type="text"
-            placeholder="Message"
+            placeholder={t("contacts.message.placeholder")}
           />
         </label>
 
@@ -149,7 +173,7 @@ export default function ContactsFormik() {
         />
 
         <Button
-          text="Send"
+          text={t("contacts.btnText")}
           type="submit"
           onBtnClick={formik.handleSubmit}
           colorBlack
@@ -158,7 +182,7 @@ export default function ContactsFormik() {
       <div className={s.imageContainer}>
         <Design className={s.icon} />
       </div>
-      <Toaster
+      {/* <Toaster
         position="top-right"
         reverseOrder={false}
         toastOptions={{
@@ -175,7 +199,10 @@ export default function ContactsFormik() {
             },
           },
         }}
-      />
+      /> */}
+      {formSend && (
+        <PopUp t={t} notification={notification} setVisible={setFormSend} />
+      )}
     </div>
   );
 }

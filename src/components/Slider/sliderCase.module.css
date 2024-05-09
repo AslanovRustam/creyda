@@ -178,7 +178,8 @@
     width: 14.34em;
   }
   .swiperBtns {
-    margin: 4.26em 10.5em 7.81em 0;
+    justify-content: center;
+    margin: 4.26em 0 7.81em 0;
   }
   .btnNext,
   .btnPrev {

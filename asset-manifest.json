@@ -1,13 +1,18 @@
 {
   "files": {
-    "main.css": "/creyda/static/css/main.7bdafba7.css",
-    "main.js": "/creyda/static/js/main.5a9a10a3.js",
-    "static/media/VelaSans-Medium500.ttf": "/creyda/static/media/VelaSans-Medium500.06a4e46f3b7dd34814f0.ttf",
-    "static/media/VelaSans-SemiBold600.ttf": "/creyda/static/media/VelaSans-SemiBold600.489b939c3be96db3682f.ttf",
-    "static/media/VelaSans-ExtraBold800.ttf": "/creyda/static/media/VelaSans-ExtraBold800.c594a80787ce45361cbe.ttf",
+    "main.css": "/creyda/static/css/main.aef04416.css",
+    "main.js": "/creyda/static/js/main.c2cdc3fe.js",
     "static/media/graphic.svg": "/creyda/static/media/graphic.051bc1a8b092f6f77f4d96d41f3a80e8.svg",
+    "static/media/Bogdanov.png": "/creyda/static/media/Bogdanov.1cc057d35202b6f3f072.png",
+    "static/media/Diankin.png": "/creyda/static/media/Diankin.80e4039a7ccd8a68f7e3.png",
+    "static/media/Berezovskyi.png": "/creyda/static/media/Berezovskyi.868189dc7bd7df593610.png",
+    "static/media/Lymarchuk.png": "/creyda/static/media/Lymarchuk.004fab75428fef5891e9.png",
     "static/media/iceDate2.png": "/creyda/static/media/iceDate2.d2baffeee637cf9ad1d4.png",
     "static/media/education2.png": "/creyda/static/media/education2.8060a6010a879b8ecc9c.png",
+    "static/media/Gilroy-Medium-500.ttf": "/creyda/static/media/Gilroy-Medium-500.f9f832b0ed3f1ab138c9.ttf",
+    "static/media/Gilroy-Regular-400.ttf": "/creyda/static/media/Gilroy-Regular-400.b91b0127c56a8e5f9e83.ttf",
+    "static/media/Gilroy-SemiBold-600.ttf": "/creyda/static/media/Gilroy-SemiBold-600.6780292641f883b3dad3.ttf",
+    "static/media/Gilroy-ExtraBold-800.ttf": "/creyda/static/media/Gilroy-ExtraBold-800.0ac6879cd286550da903.ttf",
     "static/media/planty2.png": "/creyda/static/media/planty2.a3e4fccf1d17959e9b19.png",
     "static/media/design.svg": "/creyda/static/media/design.abcea0fe230988e9aaca3eba7456bcaa.svg",
     "static/media/motion.svg": "/creyda/static/media/motion.15c5ad9eedd097acf8bbed08f69578a0.svg",
@@ -15,8 +20,6 @@
     "static/media/citf2.png": "/creyda/static/media/citf2.c19ea9c477dd26b4be31.png",
     "static/media/development.svg": "/creyda/static/media/development.7ba35c6d36e9399c8986aef1a979b4c8.svg",
     "static/media/3d.svg": "/creyda/static/media/3d.aa64fc5604b762182cbe3bf0bb38dd41.svg",
-    "static/media/RedHatDisplay-Medium500.ttf": "/creyda/static/media/RedHatDisplay-Medium500.3f3a8f4b5d0861029630.ttf",
-    "static/media/RedHatDisplay-Regular400.ttf": "/creyda/static/media/RedHatDisplay-Regular400.dfe5c1e7502e7ee7e3a2.ttf",
     "static/media/circle.png": "/creyda/static/media/circle.ebbf7d21a0fc8ed0f373.png",
     "static/media/illustration.svg": "/creyda/static/media/illustration.b601606dff9227dc3e636645cff249b8.svg",
     "static/media/planty.png": "/creyda/static/media/planty.29846f3254659256066e.png",
@@ -26,12 +29,13 @@
     "index.html": "/creyda/index.html",
     "static/media/linkedin.svg": "/creyda/static/media/linkedin.ce2ce4e4fd756c4bc81ed28e18ee550e.svg",
     "static/media/arrow.svg": "/creyda/static/media/arrow.5dca4350678d7b834e213f70670a4319.svg",
+    "static/media/getFetch.cjs": "/creyda/static/media/getFetch.c4cca45e22bc1b2c7d0d.cjs",
     "static/media/dot.svg": "/creyda/static/media/dot.bc9bf8764b65d7dbb728d0d4ef5f1db1.svg",
-    "main.7bdafba7.css.map": "/creyda/static/css/main.7bdafba7.css.map",
-    "main.5a9a10a3.js.map": "/creyda/static/js/main.5a9a10a3.js.map"
+    "main.aef04416.css.map": "/creyda/static/css/main.aef04416.css.map",
+    "main.c2cdc3fe.js.map": "/creyda/static/js/main.c2cdc3fe.js.map"
   },
   "entrypoints": [
-    "static/css/main.7bdafba7.css",
-    "static/js/main.5a9a10a3.js"
+    "static/css/main.aef04416.css",
+    "static/js/main.c2cdc3fe.js"
   ]
 }
